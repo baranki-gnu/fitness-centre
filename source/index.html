@@ -20,14 +20,167 @@
     <div class="wrapper">
       <header class="page__header main-header">
         <div class="main-header__wrap container">
-          <nav class="main-header__navigation">
+          <nav class="main-header__navigation header-navigation">
             <div clas="main-header__logo-wrap logo-block">
-              <a class="logo-block__link" alt="Supergym"></a>
+              <a class="logo-block__link" alt="Supergym.">
+                <svg class="logo__svg" focusable="false" width="122" height="22" aria-label="Круизы в Антарктику">
+                  <use xlink:href="img/sprite/sprite.svg#supergym-logo"></use>
+                </svg>
+              </a>
+              <a class="header-navigation__phone" href="tel:88005555555">8-800-555-55-55</a>
             </div>
           </nav>
         </div>
       </header>
-      <main>
+      <main class="main-content">
+        <section class="main-content__central-screen central-screen">
+          <div class="central-screen__wrap container">
+            <h1 class="visually-hidden">SUPRERGYM - Ваш фитнес центр в Омске</h1>
+            <span>Омск</span>
+            <h2 class="title">ФИТНЕС ЦЕНТР</h2>
+            <ul class="central-screen__membership-types membership-list">
+              <li class="membership-list__item">
+                <span>
+                  Тренажерный зал
+                </span>
+              </li>
+              <li class="membership-list__item">
+                <span>
+                  Групповые занятия
+                </span>
+              </li>
+              <li class="membership-list__item">
+                <span>
+                  Кардио-зона
+                </span>
+              </li>
+            </ul>
+            <a class="central-screen__buy-link button">Купить абонемент</a>
+            <picture>
+              <source srcset="img/content/super-fitness-man@1x.webp 1x, img/content/super-fitness-man@2x.webp 2x" type="image/webp">
+              <img src="img/content/super-fitness-man@1x.jpg"
+                srcset="img/content/super-fitness-man@1x.jpg 1x, img/content/super-fitness-man@2x.jpg 2x" width="500" height="556"
+                loading="lazy" alt="В нашем фитнес центре Вы добьетесь суперформы">
+            </picture>
+          </div>
+        </section>
+        <section class="main-content__gym gym">
+          <div class="gym__wrap container">
+            <h2>Тренажерный зал</h2>
+            <b>Просторный зал площадью 900 кв/м</b>
+            <p>
+              Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал
+              оснащен всем необходимым современным оборудованием для всех спортсменов.
+            </p>
+            <p>
+              В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько
+              оборудованных залов для различных видов групповых занятий.
+            </p>
+            <picture>
+              <source media="(min-width: 1024px)"
+                srcset="img/content/fitness-centre-tablet@1x.webp 1x, img/content/fitness-centre-tablet@2x.webp 2x" type="image/webp">
+              <source media="(max-width: 1023px)"
+                srcset="img/content/fitness-centre-desktop@1x.webp 1x, img/content/fitness-centre-desktop@2x.webp 2x" type="image/webp">
+              <img src="img/content/fitness-centre-desktop@1x.jpg"
+                srcset="img/content/fitness-centre-desktop@1x.jpg 1x, img/content/fitness-centre-desktop@2x.jpg 2x" width="500" height="556"
+                loading="lazy" alt="Фотография тренажерного зала SUPRERGYM.">
+            </picture>
+            <div class="gym__video">
+              <a class="gym__video-link" href="">
+                <picture>
+                  <source media="(max-width: 768px)"
+                    srcset="img/content/map-mobile@1x.webp 1x, img/content/map-mobile@2x.webp 2x" type="image/webp">
+                  <source media="(max-width: 1023px)"
+                    srcset="img/content/map-tablet@1x.webp 1x, img/content/map-tablet@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1024px)"
+                    srcset="img/content/map-desktop@1x.webp 1x, img/content/map-desktop@2x.webp 2x" type="image/webp">
+                  <img src="img/content/map-desktop@1x.jpg"
+                    srcset="img/content/map-desktop@1x.jpg 1x, img/content/map-desktop@2x.jpg 2x" width="560" height="306"
+                    loading="lazy" alt="г. Санкт Петербург, ул. Большая Конюшенная, 19/8.">
+                </picture>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="main-content__exercise-pass exercise-pass">
+          <div class="exercise-pass__wrap container">
+            <h2>Абонементы</h2>
+            <div class="exercise-pass__tabs-container">
+              <ul class="exercise-pass__tabs-list">
+                <li class="exercise-pass__item tab">
+                  <ul class="exercise-pass__innertab-list tab__list">
+                    <li class="tab__item">
+                      <h3>1 месяц</h3>
+                      <ul class="tab__pass-types pass-types__list">
+                        <li class="pass-types__item" data-one-month>
+                          <h4>С тренером</h4>
+                          <span>12 занятий</span>
+                          <b>5000</b>
+                          <svg class="pass-types__ruble" focusable="false" width="30" height="42" aria-label="Рублей">
+                            <use xlink:href="img/sprite/sprite.svg#supergym-logo"></use>
+                          </svg>
+                          <a class="pass-types__link button">купить абонемент</a>
+                        </li>
+                        <li class="pass-types__item">
+                          <h4>Дневной</h4>
+                          <span>с 8:00 до 17:00</span>
+                          <b>1700</b>
+                          <svg class="pass-types__ruble" focusable="false" width="30" height="42" aria-label="Рублей">
+                            <use xlink:href="img/sprite/sprite.svg#supergym-logo"></use>
+                          </svg>
+                          <a class="pass-types__link button">купить абонемент</a>
+                        </li>
+                        <li class="pass-types__item">
+                          <h4>Полный день</h4>
+                          <span>с 8:00 до 22:00</span>
+                          <b>2700</b>
+                          <svg class="pass-types__ruble" focusable="false" width="30" height="42" aria-label="Рублей">
+                            <use xlink:href="img/sprite/sprite.svg#supergym-logo"></use>
+                          </svg>
+                          <a class="pass-types__link button">купить абонемент</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="tab__item">
+                      <h3>1 месяц</h3>
+                      <ul class="tab__pass-types pass-types__list">
+                        <li class="pass-types__item" data-one-month>
+                          <h4>С тренером</h4>
+                          <span>12 занятий</span>
+                          <b>5000</b>
+                          <svg class="pass-types__ruble" focusable="false" width="30" height="42" aria-label="Рублей">
+                            <use xlink:href="img/sprite/sprite.svg#supergym-logo"></use>
+                          </svg>
+                          <a class="pass-types__link button">купить абонемент</a>
+                        </li>
+                        <li class="pass-types__item">
+                          <h4>Дневной</h4>
+                          <span>с 8:00 до 17:00</span>
+                          <b>1700</b>
+                          <svg class="pass-types__ruble" focusable="false" width="30" height="42" aria-label="Рублей">
+                            <use xlink:href="img/sprite/sprite.svg#supergym-logo"></use>
+                          </svg>
+                          <a class="pass-types__link button">купить абонемент</a>
+                        </li>
+                        <li class="pass-types__item">
+                          <h4>Полный день</h4>
+                          <span>с 8:00 до 22:00</span>
+                          <b>2700</b>
+                          <svg class="pass-types__ruble" focusable="false" width="30" height="42" aria-label="Рублей">
+                            <use xlink:href="img/sprite/sprite.svg#supergym-logo"></use>
+                          </svg>
+                          <a class="pass-types__link button">купить абонемент</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+        </section>
 
       </main>
       <footer class="page__footer main-footer">
