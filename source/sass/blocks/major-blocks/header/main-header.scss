@@ -1,0 +1,17 @@
+.main-header {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: $color-default-white;
+  font-family: $family-alumni;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 31.2px;
+}
+
+.main-header__navigation {
+  margin: 0 auto;
+}

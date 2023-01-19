@@ -1,0 +1,17 @@
+.header-navigation {
+  max-width: 1216px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-navigation a {
+  color: $color-default-white;
+  font-size: 26px;
+  line-height: 31.2px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.header-navigation__logo-wrap {
+  padding-top: 10px;
+}

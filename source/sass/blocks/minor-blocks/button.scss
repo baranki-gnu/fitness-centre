@@ -4,8 +4,15 @@
   font-size: 12px;
   font-weight: 700;
   line-height: 14px;
-  letter-spacing: 5em;
+  letter-spacing: 0.05em;
   color: $color-sapphire;
   background-color: transparent;
   border: 2px solid $color-resolution-blue;
+  text-transform: uppercase;
+}
+
+.button--white {
+  padding: 24px;
+  color: $color-default-white;
+  border: 2px solid $color-default-white;
 }

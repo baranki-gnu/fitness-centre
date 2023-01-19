@@ -1,23 +1,11 @@
 .container {
   width: 100%;
-  max-width: 1210px;
+  max-width: 1322px;
   margin: 0 auto;
   padding: 0 25px;
-
-  /*@include vp-1439 {
-    padding: 0 32px;
-  }
-
-  @include vp-1023 {
-    padding: 0 24px;
-  }
-
-  @include vp-767 {
-    padding: 0 16px;
-  }*/
 }
 
-@media (max-width: ($vp-1024 - 1px)) {
+@media (max-width: ($vp-1200 - 1px)) {
   .container {
     max-width: 100%;
     padding: 0 45px;
