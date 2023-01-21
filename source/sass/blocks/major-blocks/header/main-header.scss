@@ -15,3 +15,10 @@
 .main-header__navigation {
   margin: 0 auto;
 }
+
+@media (max-width: ($vp-768 - 1px)) {
+  .main-header {
+    padding: 15px 0;
+  }
+
+}

@@ -34,7 +34,7 @@
       </header>
       <main class="main-content">
         <section class="main-content__central-screen central-screen">
-          <div class="central-screen__wrap container">
+          <div class="central-screen__wrap container container--central">
             <h1 class="visually-hidden">SUPERGYM - Ваш фитнес центр в Омске</h1>
             <ul class="central-screen__features">
               <li class="features-list__features-item">
@@ -53,40 +53,53 @@
                 </span>
               </li>
             </ul>
-            <b>омск</b>
-            <h2>ФИТНЕС ЦЕНТР</h2>
+            <div class="central-sreen__inner-wrap">
+              <b>омск</b>
+            <h2>Фитнес центр</h2>
             <a class="central-screen__buy-link button button--white">Купить абонемент</a>
-            <picture>
+            </div>
+            <div class="central-screen__image-wrap">
+              <picture>
               <source srcset="img/content/super-fitness-man@1x.webp 1x, img/content/super-fitness-man@2x.webp 2x"
                 type="image/webp">
               <img src="img/content/super-fitness-man@1x.jpg"
                 srcset="img/content/super-fitness-man@1x.jpg 1x, img/content/super-fitness-man@2x.jpg 2x" width="500"
                 height="556" loading="lazy" alt="В нашем фитнес центре Вы добьетесь суперформы">
             </picture>
+            </div>
           </div>
         </section>
         <section class="main-content__gym gym">
           <div class="gym__wrap container">
-            <h2>Тренажерный зал</h2>
-            <b>Просторный зал площадью 900 кв/м</b>
-            <p>
-              Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал
-              оснащен всем необходимым современным оборудованием для всех спортсменов.
-            </p>
-            <p>
-              В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько
-              оборудованных залов для различных видов групповых занятий.
-            </p>
-            <picture>
-              <source media="(min-width: 1023px)"
-                srcset="img/content/fitness-centre-tablet@1x.webp 1x, img/content/fitness-centre-tablet@2x.webp 2x" type="image/webp">
-              <source srcset="img/content/fitness-centre-desktop@1x.webp 1x, img/content/fitness-centre-desktop@2x.webp 2x" type="image/webp">
-              <img src="img/content/fitness-centre-desktop@1x.jpg"
-                srcset="img/content/fitness-centre-desktop@1x.jpg 1x, img/content/fitness-centre-desktop@2x.jpg 2x" width="500" height="556"
-                loading="lazy" alt="Фотография тренажерного зала SUPRERGYM.">
-            </picture>
+            <div class="gym__text-wrap">
+              <div class="gym__inner-text-wrap">
+                <h2>Тренажерный зал</h2>
+                <b>Просторный зал площадью 900 кв/м</b>
+                <p>
+                  Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал
+                  оснащен всем необходимым современным оборудованием для всех спортсменов.
+                </p>
+                <p>
+                  В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
+                  несколько
+                  оборудованных залов для различных видов групповых занятий.
+                </p>
+              </div>
+            </div>
+            <div class="gym__photo-wrap">
+              <picture>
+                <source media="(max-width: 1200px)"
+                  srcset="img/content/fitness-centre-tablet@1x.webp 1x, img/content/fitness-centre-tablet@2x.webp 2x"
+                  type="image/webp">
+                <source srcset="img/content/fitness-centre-desktop@1x.webp 1x, img/content/fitness-centre-desktop@2x.webp 2x"
+                  type="image/webp">
+                <img src="img/content/fitness-centre-desktop@1x.jpg"
+                  srcset="img/content/fitness-centre-desktop@1x.jpg 1x, img/content/fitness-centre-desktop@2x.jpg 2x" width="500"
+                  height="556" loading="lazy" alt="Фотография тренажерного зала SUPRERGYM.">
+              </picture>
+            </div>
             <div class="gym__video">
-              <a class="gym__video-link" href="">
+              <a class="gym__video-link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
                 <picture>
                   <source media="(max-width: 767px)"
                     srcset="img/content/video-picture-mobile@1x.webp 1x, img/content/video-picture-mobile@2x.webp 2x" type="image/webp">
@@ -96,6 +109,23 @@
                     loading="lazy" alt="г. Санкт Петербург, ул. Большая Конюшенная, 19/8.">
                 </picture>
               </a>
+              <button class="gym__video-play" type="button">
+                <svg width="73" height="73" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="36.5" cy="36.5" r="35.5" stroke="url(#paint0_linear_13506_23)" stroke-opacity="0.2" stroke-width="2"/>
+                  <circle cx="36" cy="36" r="26" fill="url(#paint1_linear_13506_23)"/>
+                  <path d="M42 36L33 41.1962L33 30.8038L42 36Z" fill="white"/>
+                  <defs>
+                  <linearGradient id="paint0_linear_13506_23" x1="14.435" y1="2.1949e-05" x2="77.2232" y2="7.77042" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#ED0233"/>
+                  <stop offset="1" stop-color="#003EB7"/>
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_13506_23" x1="10" y1="35.6533" x2="39.0231" y2="6.52189" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#003D85"/>
+                  <stop offset="0.885417" stop-color="#B80027"/>
+                  </linearGradient>
+                  </defs>
+                  </svg>
+              </button>
             </div>
           </div>
         </section>

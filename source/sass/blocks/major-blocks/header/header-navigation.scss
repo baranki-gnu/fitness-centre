@@ -15,3 +15,21 @@
 .header-navigation__logo-wrap {
   padding-top: 10px;
 }
+
+@media (max-width: ($vp-1200 - 1px)) {
+  .header-navigation a {
+    padding-top: 5px;
+    font-size: 24px;
+    line-height: 28.8px;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media (max-width: ($vp-768 - 1px)) {
+  .header-navigation a {
+    padding-top: 0;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+}
