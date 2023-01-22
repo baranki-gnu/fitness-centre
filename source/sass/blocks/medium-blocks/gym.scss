@@ -7,7 +7,7 @@
   height: max-content;
   margin: 0 auto;
   padding-top: 120px;
-  padding-bottom: 195px;
+  padding-bottom: 226px;
   display: flex;
   //justify-content: flex-end;
   gap: 35px;
@@ -109,3 +109,143 @@
   margin: auto;
 }
 
+@media (max-width: ($vp-1200 - 1px)) {
+  .gym__wrap {
+    width: 100%;
+    padding-top: 100px;
+    flex-direction: column;
+  }
+
+  .gym__text-wrap {
+    width: 100%;
+    max-width: 1109px;
+    margin-left: 0;
+    padding-top: 0;
+    padding-bottom: 7px;
+  }
+
+  .gym__inner-text-wrap {
+    //max-width: 45.27%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .gym__video {
+    width: 34.75%;
+    max-width: 384px;
+    height: auto;
+    aspect-ratio: 1.59;
+    right: 15%;
+    bottom: 112px;
+    transform: translateX(-50%);
+  }
+
+  .gym__photo-wrap {
+    width: 100%;
+    max-width: 1109px;
+    max-height: 564px;
+  }
+
+  .gym p {
+    max-width: 100%;
+  }
+
+  .gym__photo-wrap img,
+  .gym__photo-wrap picture {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .gym h2,
+  .gym b,
+  .gym__text-wrap p {
+    text-align: center;
+  }
+
+  .gym h2 {
+    margin-bottom: 0;
+    padding-right: 10px;
+    font-size: 42px;
+    line-height: 50.4px;
+  }
+
+  .gym b {
+    margin-bottom: 35px;
+  }
+
+  .gym__text-wrap p ~ p {
+    display: none;
+  }
+}
+
+@media (max-width: ($vp-768 - 1px)) {
+  .gym__wrap {
+    padding-top: 64px;
+    gap: 32px;
+  }
+
+  .gym h2 {
+    margin-bottom: 3px;
+    font-size: 32px;
+    line-height: 38.4px;
+    text-align: left;
+  }
+
+  .gym__text-wrap {
+    padding-bottom: 0;
+  }
+
+  .gym b,
+  .gym p {
+    text-align: left;
+  }
+
+  .gym b {
+    margin-bottom: 27px;
+  }
+
+  .gym p {
+    padding-right: 20px;
+  }
+
+  .gym__photo-wrap {
+    padding-bottom: 7px;
+  }
+
+  .gym__photo-wrap img,
+  .gym__photo-wrap picture {
+    min-height: 313px;
+    object-fit: cover;
+    //object-position: 85%;
+  }
+
+  .gym__video {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 1.92;
+    margin: 0;
+    bottom: 0;
+    right: -50%;
+    position: relative;
+  }
+
+  .gym__video a {
+    width: 100%;
+    display: flex;
+    transform: translate(0);
+
+  }
+
+  .gym__video img,
+  .gym__video picture {
+    width: 100%;
+  }
+
+  .gym__inner-text-wrap {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+}

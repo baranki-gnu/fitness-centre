@@ -1,0 +1,82 @@
+.exercise-pass {
+  padding-bottom: 120px;
+  background-color: $color-ghost-white;
+  position: relative;
+}
+
+.exercise-pass::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 321px;
+  height: 384px;
+  bottom: 0;
+  right: -50px;;
+  background: url("../img/background/weight-plates@1x.png") center/cover;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/background/weight-plates@2x.png") center/cover;
+  }
+
+  //transform: rotate(-35deg);
+}
+
+//.exercise-pass__bottom-wrap {
+//  height: 120px;
+//  background-color: $color-default-white;
+//}
+
+.exercise-pass__wrap {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.exercise-pass h2 {
+  margin: 0;
+  font-family: $family-alumni;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 64.8px;
+  letter-spacing: 0.03em;
+  color: $color-sapphire;
+  text-align: center;
+}
+
+.exercise-pass__list {
+  width: max-content;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  list-style-type: none;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  position: relative;
+  z-index: 5;
+}
+
+.exercise-pass__item h3 {
+  font-family: $family-roboto;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(16, 38, 84, 0.5);
+}
+
+.exercise-pass__item--active h3 {
+  color: $color-sapphire;
+  //border-bottom: 2px solid $color-crimson;
+}
+
+.exercise-pass__item--active {
+  border-bottom: 2px  $color-crimson solid;
+}
+
+.exercise-pass__item:not(:last-child) {
+  padding-right: 46px;
+}
+
+.exercise-pass__tabs-list {
+  padding: 0;
+  list-style-type: none;
+}
+
