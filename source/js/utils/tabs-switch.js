@@ -15,7 +15,7 @@ let tabsContentArray = Array.from(tabsContentItems);
 
 function switchTab() {
   titlesArray.forEach((item, index) => {
-    item.addEventListener('çlick', () => {
+    item.addEventListener('click', () => {
       console.log('дошли до сюда');
       if (!item.classList.contains('exercise-pass__duration-item--active')) {
         console.log('здесь');
