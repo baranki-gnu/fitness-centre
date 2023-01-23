@@ -92,18 +92,18 @@
           </div>
           <div class="gym__photo-wrap">
             <picture>
-              <source media="(max-width: 787px)"
+              <source media="(max-width: 768px)"
                 srcset="img/content/fitness-centre-mobile@1x.webp 1x, img/content/fitness-centre-mobile@2x.webp 2x"
                 type="image/webp">
               <source media="(max-width: 1199px)"
                 srcset="img/content/fitness-centre-tablet@1x.webp 1x, img/content/fitness-centre-tablet@2x.webp 2x"
                 type="image/webp">
-              <source
+              <source media="(min-width: 1200px)"
                 srcset="img/content/fitness-centre-desktop@1x.webp 1x, img/content/fitness-centre-desktop@2x.webp 2x"
                 type="image/webp">
               <img src="img/content/fitness-centre-desktop@1x.jpg"
                 srcset="img/content/fitness-centre-desktop@1x.jpg 1x, img/content/fitness-centre-desktop@2x.jpg 2x"
-                width="500" height="556" loading="lazy" alt="Фотография тренажерного зала SUPRERGYM.">
+                width="660" height="401" loading="lazy" alt="Фотография тренажерного зала SUPRERGYM.">
             </picture>
           </div>
           <div class="gym__video">
@@ -145,31 +145,32 @@
       </section>
       <section class="main-content__exercise-pass exercise-pass">
         <div class="exercise-pass__wrap container">
-          <h2>Абонементы</h2>
+          <h2 class="title">Абонементы</h2>
           <div class="exercise-pass__duration-wrap">
-            <ul class="exercise-pass__list">
-              <li class="exercise-pass__item exercise-pass__item--active">
+            <ul class="exercise-pass__duration-list" data-tabs-titles>
+              <li class="exercise-pass__duration-item exercise-pass__duration-item--active" data-tab-title>
                 <h3>1 месяц</h3>
               </li>
-              <li class="exercise-pass__item">
+              <li class="exercise-pass__duration-item" data-tab-title>
                 <h3>6 месяцев</h3>
               </li>
-              <li class="exercise-pass__item">
+              <li class="exercise-pass__duration-item" data-tab-title>
                 <h3>12 месяцев</h3>
               </li>
             </ul>
           </div>
           <div class="exercise-pass__tabs-container">
-            <ul class="exercise-pass__tabs-list">
-              <li class="exercise-pass__item tab">
-                <ul class="exercise-pass__innertab-list tab__list">
+
+                <ul class="exercise-pass__tab-list tab-list" data-tabs-content>
                   <!--First Tab-->
-                  <li class="tab__item pass-types" data-one-month>
-                    <h3 class="visually-hidden">1 месяц</h3>
-                    <ul class="tab__pass-types pass-types__list">
+                  <li class="tab-list__item tab-list__item--current pass-types" data-tab-item>
+
+                    <ul class="tab-list__pass-types pass-types__list">
                       <!--With a coach-->
                       <li class="pass-types__item">
+
                         <div class="pass-types__item-inner-wrap">
+                          <span class="pass-types__item-info-tip">1 месяц</span>
                           <h4>С тренером</h4>
                           <span>12 занятий</span>
                           <div class="pass-types__price-wrap">
@@ -181,10 +182,13 @@
                           </div>
                           <a class="pass-types__link button">купить абонемент</a>
                         </div>
+
                       </li>
                       <!--Daytime-->
-                      <li class="pass-types__item">
+                      <li class="pass-types__item pass-types__item--active">
+
                         <div class="pass-types__item-inner-wrap">
+                          <span class="pass-types__item-info-tip">1 месяц</span>
                           <h4>Дневной</h4>
                           <span>с 8:00 до 17:00</span>
                           <div class="pass-types__price-wrap">
@@ -194,13 +198,15 @@
                               <use xlink:href="img/sprite/sprite.svg#ruble"></use>
                             </svg>
                           </div>
-
                           <a class="pass-types__link button">купить абонемент</a>
                         </div>
+
                       </li>
                       <!--Full Day-->
                       <li class="pass-types__item">
+
                         <div class="pass-types__item-inner-wrap">
+                          <span class="pass-types__item-info-tip">1 месяц</span>
                           <h4>Полный день</h4>
                           <span>с 8:00 до 22:00</span>
                           <div class="pass-types__price-wrap">
@@ -212,105 +218,122 @@
                           </div>
                           <a class="pass-types__link button">купить абонемент</a>
                         </div>
+
                       </li>
                     </ul>
                   </li>
                   <!--Second Tab-->
-                  <li class="tab__item" data-six-months>
-                    <h3 class="visually-hidden">6 месяцев</h3>
-                    <ul class="tab__pass-types pass-types__list">
+                  <li class="tab-list__item" data-tab-item>
+
+                    <ul class="tab-list__pass-types pass-types__list">
                       <!--With a coach-->
                       <li class="pass-types__item">
-                        <h4>С тренером</h4>
-                        <span>72 занятия</span>
-                        <div class="pass-types__price-wrap">
-                          <span aria-hidden="true">25000</span>
-                          <b>25000</b>
-                          <svg class="pass-types__ruble" focusable="false" width="30" height="42" aria-label="Рублей">
-                            <use xlink:href="img/sprite/sprite.svg#ruble"></use>
-                          </svg>
+                        <div class="pass-types__item-inner-wrap">
+                          <span class="pass-types__item-info-tip">6 месяцев</span>
+                          <h4>С тренером</h4>
+                          <span>72 занятия</span>
+                          <div class="pass-types__price-wrap">
+                            <span aria-hidden="true">25000</span>
+                            <b>25000</b>
+                            <svg class="pass-types__ruble" focusable="false" width="30" height="42" aria-label="Рублей">
+                              <use xlink:href="img/sprite/sprite.svg#ruble"></use>
+                            </svg>
+                          </div>
+                          <a class="pass-types__link button">купить абонемент</a>
                         </div>
-                        <a class="pass-types__link button">купить абонемент</a>
                       </li>
                       <!--Daytime-->
-                      <li class="pass-types__item">
-                        <h4>Дневной</h4>
-                        <span>с 8:00 до 17:00</span>
-                        <div class="pass-types__price-wrap">
-                          <span aria-hidden="true">8700</span>
-                          <b>8700</b>
-                          <svg class="pass-types__ruble" focusable="false" width="30" height="42" aria-label="Рублей">
-                            <use xlink:href="img/sprite/sprite.svg#ruble"></use>
-                          </svg>
+                      <li class="pass-types__item pass-types__item--active">
+                        <div class="pass-types__item-inner-wrap">
+                          <span class="pass-types__item-info-tip">6 месяцев</span>
+                          <h4>Дневной</h4>
+                          <span>с 8:00 до 17:00</span>
+                          <div class="pass-types__price-wrap">
+                            <span aria-hidden="true">8700</span>
+                            <b>8700</b>
+                            <svg class="pass-types__ruble" focusable="false" width="30" height="42" aria-label="Рублей">
+                              <use xlink:href="img/sprite/sprite.svg#ruble"></use>
+                            </svg>
+                          </div>
+                          <a class="pass-types__link button">купить абонемент</a>
                         </div>
-                        <a class="pass-types__link button">купить абонемент</a>
                       </li>
                       <!--Full Day-->
                       <li class="pass-types__item">
-                        <h4>Полный день</h4>
-                        <span>с 8:00 до 22:00</span>
-                        <div class="pass-types__price-wrap">
-                          <span aria-hidden="true">11700</span>
-                          <b>11700</b>
-                          <svg class="pass-types__ruble" focusable="false" width="30" height="42" aria-label="Рублей">
-                            <use xlink:href="img/sprite/sprite.svg#ruble"></use>
-                          </svg>
+                        <div class="pass-types__item-inner-wrap">
+                          <span class="pass-types__item-info-tip">6 месяцев</span>
+                          <h4>Полный день</h4>
+                          <span>с 8:00 до 22:00</span>
+                          <div class="pass-types__price-wrap">
+                            <span aria-hidden="true">11700</span>
+                            <b>11700</b>
+                            <svg class="pass-types__ruble" focusable="false" width="30" height="42" aria-label="Рублей">
+                              <use xlink:href="img/sprite/sprite.svg#ruble"></use>
+                            </svg>
+                          </div>
+                          <a class="pass-types__link button">купить абонемент</a>
                         </div>
-                        <a class="pass-types__link button">купить абонемент</a>
                       </li>
                     </ul>
                   </li>
                   <!--Third Tab-->
-                  <li class="tab__item" data-twelve-months>
-                    <h3 class="visually-hidden">12 месяцев</h3>
-                    <ul class="tab__pass-types pass-types__list">
+                  <li class="tab-list__item" data-tab-item>
+
+                    <ul class="tab-list__pass-types pass-types__list">
                       <!--With a coach-->
                       <li class="pass-types__item">
-                        <h4>С тренером</h4>
-                        <span>144 занятия</span>
-                        <div class="pass-types__price-wrap">
-                          <span aria-hidden="true">47000</span>
-                          <b>47000</b>
-                          <svg class="pass-types__ruble" focusable="false" width="30" height="42" aria-label="Рублей">
-                            <use xlink:href="img/sprite/sprite.svg#ruble"></use>
-                          </svg>
+                        <div class="pass-types__item-inner-wrap">
+                          <span class="pass-types__item-info-tip">12 месяцев</span>
+                          <h4>С тренером</h4>
+                          <span>144 занятия</span>
+                          <div class="pass-types__price-wrap">
+                            <span aria-hidden="true">47000</span>
+                            <b>47000</b>
+                            <svg class="pass-types__ruble" focusable="false" width="30" height="42" aria-label="Рублей">
+                              <use xlink:href="img/sprite/sprite.svg#ruble"></use>
+                            </svg>
+                          </div>
+                          <a class="pass-types__link button">купить абонемент</a>
                         </div>
-                        <a class="pass-types__link button">купить абонемент</a>
                       </li>
                       <!--Daytime-->
-                      <li class="pass-types__item">
-                        <h4>Дневной</h4>
-                        <span>с 8:00 до 17:00</span>
-                        <div class="pass-types__price-wrap">
-                          <span aria-hidden="true">15000</span>
-                          <b>15000</b>
-                          <svg class="pass-types__ruble" focusable="false" width="30" height="42" aria-label="Рублей">
-                            <use xlink:href="img/sprite/sprite.svg#ruble"></use>
-                          </svg>
+                      <li class="pass-types__item pass-types__item--active">
+                        <div class="pass-types__item-inner-wrap">
+                          <span class="pass-types__item-info-tip">12 месяцев</span>
+                          <h4>Дневной</h4>
+                          <span>с 8:00 до 17:00</span>
+                          <div class="pass-types__price-wrap">
+                            <span aria-hidden="true">15000</span>
+                            <b>15000</b>
+                            <svg class="pass-types__ruble" focusable="false" width="30" height="42" aria-label="Рублей">
+                              <use xlink:href="img/sprite/sprite.svg#ruble"></use>
+                            </svg>
+                          </div>
+                          <a class="pass-types__link button">купить абонемент</a>
                         </div>
-                        <a class="pass-types__link button">купить абонемент</a>
                       </li>
                       <!--Full Day-->
                       <li class="pass-types__item">
-                        <h4>Полный день</h4>
-                        <span>с 8:00 до 22:00</span>
-                        <div class="pass-types__price-wrap">
-                          <span aria-hidden="true">20400</span>
-                          <b>20400</b>
-                          <svg class="pass-types__ruble" focusable="false" width="30" height="42" aria-label="Рублей">
-                            <use xlink:href="img/sprite/sprite.svg#ruble"></use>
-                          </svg>
+                        <div class="pass-types__item-inner-wrap">
+                          <span class="pass-types__item-info-tip">12 месяцев</span>
+                          <h4>Полный день</h4>
+                          <span>с 8:00 до 22:00</span>
+                          <div class="pass-types__price-wrap">
+                            <span aria-hidden="true">20400</span>
+                            <b>20400</b>
+                            <svg class="pass-types__ruble" focusable="false" width="30" height="42" aria-label="Рублей">
+                              <use xlink:href="img/sprite/sprite.svg#ruble"></use>
+                            </svg>
+                          </div>
+                          <a class="pass-types__link button">купить абонемент</a>
                         </div>
-                        <a class="pass-types__link button">купить абонемент</a>
                       </li>
                     </ul>
                   </li>
                 </ul>
-              </li>
-            </ul>
+
           </div>
         </div>
-        <!--<div class="exercise-pass__bottom-wrap"></div>-->
       </section>
       <section class="main-content__crossfit-competition crossfit-competition">
         <div class="crossfit-competition__wrap container">

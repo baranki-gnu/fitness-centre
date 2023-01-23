@@ -113,6 +113,7 @@
   .gym__wrap {
     width: 100%;
     padding-top: 100px;
+    padding-bottom: 184px;
     flex-direction: column;
   }
 
@@ -138,7 +139,7 @@
     height: auto;
     aspect-ratio: 1.59;
     right: 15%;
-    bottom: 112px;
+    bottom: 98px;
     transform: translateX(-50%);
   }
 
@@ -155,7 +156,9 @@
   .gym__photo-wrap img,
   .gym__photo-wrap picture {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 563px;
+    aspect-ratio: 1.97;
+    //object-fit: contain;
   }
 
   .gym h2,
@@ -183,6 +186,7 @@
 @media (max-width: ($vp-768 - 1px)) {
   .gym__wrap {
     padding-top: 64px;
+    padding-bottom: 70px;
     gap: 32px;
   }
 

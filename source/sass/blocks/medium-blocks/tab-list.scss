@@ -1,0 +1,16 @@
+.tab-list {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.tab-list__item {
+  display: none;
+}
+
+.tab-list__item--current {
+  width: 100%;
+  display: block;
+}
+

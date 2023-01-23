@@ -1105,7 +1105,7 @@ button,
 
 .exercise-pass {
   padding-bottom: 120px;
-  background-color: #f8f9fc;
+  background-color: #ffffff;
   position: relative;
 }
 
@@ -1115,14 +1115,20 @@ button,
   display: block;
   width: 321px;
   height: 384px;
-  bottom: 0;
-  right: -50px;
-  background: url("../img/background/weight-plates@1x.png") center/cover;
+  bottom: 90px;
+  right: 0;
+  background: url("../img/background/weight-plates@1x.png");
+  background-position: -22% 30%;
+}
+
+.exercise-pass__duration-wrap {
+  margin-bottom: 39px;
 }
 
 .exercise-pass__wrap {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 78px;
+  background-color: #f8f9fc;
 }
 
 .exercise-pass h2 {
@@ -1136,7 +1142,7 @@ button,
   text-align: center;
 }
 
-.exercise-pass__list {
+.exercise-pass__duration-list {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -1147,12 +1153,18 @@ button,
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
-  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  -webkit-box-shadow: 0 2px 0 0 rgba(120, 120, 120, 0.2);
+  box-shadow: 0 2px 0 0 rgba(120, 120, 120, 0.2);
   position: relative;
   z-index: 5;
 }
 
-.exercise-pass__item h3 {
+.exercise-pass__duration-item {
+  cursor: pointer;
+}
+
+.exercise-pass__duration-item h3 {
+  margin-bottom: 10px;
   font-family: "Roboto Condensed", sans-serif, "Arial";
   font-weight: 400;
   font-size: 20px;
@@ -1160,24 +1172,20 @@ button,
   color: rgba(16, 38, 84, 0.5);
 }
 
-.exercise-pass__item--active h3 {
+.exercise-pass__duration-item--active h3 {
   color: #102654;
 }
 
-.exercise-pass__item--active {
-  border-bottom: 2px #d10a42 solid;
+.exercise-pass__duration-item--active {
+  -webkit-box-shadow: 0 2px 0 0 #d10a42;
+  box-shadow: 0 2px 0 0 #d10a42;
 }
 
-.exercise-pass__item:not(:last-child) {
-  padding-right: 46px;
+.exercise-pass__duration-item:not(:last-child) {
+  margin-right: 46px;
 }
 
-.exercise-pass__tabs-list {
-  padding: 0;
-  list-style-type: none;
-}
-
-.tab__list {
+.tab-list {
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1187,8 +1195,13 @@ button,
   list-style-type: none;
 }
 
-.tab__item {
+.tab-list__item {
+  display: none;
+}
+
+.tab-list__item--current {
   width: 100%;
+  display: block;
 }
 
 .pass-types__list {
@@ -1197,8 +1210,11 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   list-style-type: none;
   position: relative;
   z-index: 5;
@@ -1208,7 +1224,6 @@ button,
   width: 31.03%;
   max-width: 360px;
   margin-bottom: 25px;
-  padding: 68px 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1227,11 +1242,13 @@ button,
 
 .pass-types__item-inner-wrap {
   width: 100%;
-  max-width: 206px;
+  padding: 65px 15px;
   margin: 0 auto;
 }
 
 .pass-types__item h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 26px;
   line-height: 28.64px;
@@ -1240,9 +1257,9 @@ button,
 }
 
 .pass-types__item span {
-  margin: 0 auto 96px auto;
+  margin: 0 auto 46px auto;
   display: block;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: #495a7d;
@@ -1250,8 +1267,11 @@ button,
 }
 
 .pass-types__price-wrap {
-  margin: 0 auto 59px auto;
-  padding-top: 40px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto 32px auto;
+  padding-top: 20px;
   position: relative;
 }
 
@@ -1284,6 +1304,55 @@ button,
 
 .pass-types__item a {
   width: 100%;
+  max-width: 206px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.pass-types__item--active {
+  background-image: -o-linear-gradient(315deg, #d10a42 0%, #00359f 100%);
+  background-image: linear-gradient(135deg, #d10a42 0%, #00359f 100%);
+}
+
+.pass-types__item--active a {
+  color: #ffffff;
+  background-image: -o-linear-gradient(315deg, #ed0233 0%, #003eb7 100%);
+  background-image: linear-gradient(135deg, #ed0233 0%, #003eb7 100%);
+  border-width: 0;
+}
+
+.pass-types__item--active .pass-types__item-inner-wrap {
+  width: calc(100% - 14px);
+  height: calc(100% - 14px);
+  margin: auto;
+  padding: 58px 8px;
+  background-color: #ffffff;
+}
+
+.pass-types__item--nojs .pass-types__item-info-tip {
+  margin: 0 auto;
+  display: block;
+  font-size: 18px;
+  line-height: 26px;
+  color: #d10a42;
+}
+
+.pass-types__item .pass-types__item-info-tip {
+  display: none;
+}
+
+.strengths h2 {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 64.8px;
+  color: #102654;
 }
 
 .button {
@@ -1456,6 +1525,7 @@ button,
   .gym__wrap {
     width: 100%;
     padding-top: 100px;
+    padding-bottom: 184px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1483,7 +1553,7 @@ button,
     height: auto;
     aspect-ratio: 1.59;
     right: 15%;
-    bottom: 112px;
+    bottom: 98px;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -1502,7 +1572,8 @@ button,
   .gym__photo-wrap img,
   .gym__photo-wrap picture {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 563px;
+    aspect-ratio: 1.97;
   }
 
   .gym h2,
@@ -1526,6 +1597,73 @@ button,
     display: none;
   }
 
+  .exercise-pass {
+    padding-bottom: 100px;
+  }
+
+  .exercise-pass::after {
+    bottom: 17px;
+    background-size: 130%;
+    background-position: 25% 30%;
+  }
+
+  .exercise-pass h2 {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 6px;
+    font-size: 42px;
+    line-height: 50.4px;
+  }
+
+  .exercise-pass__wrap {
+    padding-top: 100px;
+    padding-bottom: 42px;
+  }
+
+  .exercise-pass__duration-wrap {
+    margin-bottom: 46px;
+  }
+
+  .exercise-pass__duration-item:not(:last-child) {
+    margin-right: 53px;
+  }
+
+  .exercise-pass__duration-item h3 {
+    margin-bottom: 13px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .pass-types__list {
+    width: 65.19%;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .pass-types__item {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 42px;
+    aspect-ratio: 0.99;
+  }
+
+  .pass-types__item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .pass-types__item h4 {
+    line-height: 28.64px;
+  }
+
+  .strengths h2 {
+    font-size: 42px;
+    line-height: 50.4px;
+  }
+
   .logo-block__link,
   .logo-block a {
     padding-top: 0;
@@ -1546,7 +1684,7 @@ button,
 
   .container--central {
     padding-left: 13px;
-    padding-right: 13px;
+    padding-right: 10px;
   }
 
   .container--gym {
@@ -1596,7 +1734,7 @@ button,
   }
 
   .central-screen b {
-    margin-right: 3px;
+    margin-right: 8px;
     margin-bottom: 12px;
     font-size: 28px;
     line-height: 33.6px;
@@ -1639,6 +1777,7 @@ button,
 
   .gym__wrap {
     padding-top: 64px;
+    padding-bottom: 70px;
     gap: 32px;
   }
 
@@ -1707,6 +1846,91 @@ button,
     padding-right: 15px;
   }
 
+  .exercise-pass__wrap {
+    padding-top: 65px;
+    padding-bottom: 56px;
+  }
+
+  .exercise-pass h2 {
+    font-size: 32px;
+    line-height: 38.4px;
+  }
+
+  .exercise-pass__duration-wrap {
+    margin-bottom: 37px;
+  }
+
+  .exercise-pass__duration-item {
+    padding-right: 5px;
+  }
+
+  .exercise-pass__duration-item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .exercise-pass__duration-item h3 {
+    margin-top: 18px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .exercise-pass::after {
+    display: none;
+  }
+
+  .pass-types__list {
+    width: 100%;
+    gap: 38px;
+  }
+
+  .pass-types__item {
+    margin-bottom: 0;
+    aspect-ratio: 0.76;
+  }
+
+  .pass-types__item h4 {
+    font-size: 22px;
+    line-height: 24.23px;
+  }
+
+  .pass-types__item-inner-wrap {
+    padding-top: 50px;
+  }
+
+  .pass-types__price-wrap {
+    margin-bottom: 29px;
+    padding-top: 7px;
+  }
+
+  .pass-types__price-wrap span {
+    margin-bottom: 0;
+    left: -15px;
+    font-size: 80px;
+    line-height: 120px;
+  }
+
+  .pass-types__price-wrap svg {
+    width: 24px;
+    height: 33px;
+  }
+
+  .pass-types__item b {
+    margin-right: 10px;
+    padding-left: 4px;
+    font-size: 48px;
+    line-height: 72px;
+  }
+
+  .pass-types__item--active .pass-types__item-inner-wrap {
+    padding-top: 44px;
+    padding-bottom: 48px;
+  }
+
+  .strengths h2 {
+    font-size: 32px;
+    line-height: 38.4px;
+  }
+
   .logo-block__link svg {
     width: 69px;
     height: 24px;
@@ -1739,6 +1963,7 @@ button,
 }
 
   .exercise-pass::after {
-    background: url("../img/background/weight-plates@2x.png") center/cover;
+    background: url("../img/background/weight-plates@2x.png");
+    background-position: -22% 30%;
   }
 }
