@@ -1,31 +1,60 @@
-let tabsTitlesList = document.querySelector('[data-tabs-titles]');
-let tabsItemTitles = tabsTitlesList.querySelectorAll('[data-tab-title]');
+let tabsButtonsList = document.querySelector('[data-tabs-buttons]');
+let tabsButtons = Array.from(tabsButtonsList.querySelectorAll('[data-duration]'));
 
-let tabsContentList = document.querySelector('[data-tabs-content]');
-let tabsContentItems = tabsContentList.querySelectorAll('[data-tab-item]');
+function findActiveButton() {
+  let activeButton = tabsButtonsList.querySelector('.exercise-pass__duration-item--active');
+  console.log(activeButton);
 
-let titlesArray = Array.from(tabsItemTitles);
-let tabsContentArray = Array.from(tabsContentItems);
+  return activeButton;
+}
 
-/*function check() {
-  titlesArray.forEach((item) => {
-    item.addEventListener('click', console.log('проверка'));
-  });
-}*/
+function isButtonActive(button) {
+  if (button.dataset.duration === findActiveButton().dataset.duration) {
+    console.log('да');
+    return true;
+  }
+  console.log('нет');
+
+  return false;
+}
+
+function findActiveTab(dataInfo) {
+  console.log('дата ' + dataInfo);
+  let tabsList = document.querySelector('[data-tabs-content]');
+  //let string = 'data-tab=' + '\"' + dataInfo + '\"';
+  let activeTab = tabsList.querySelector('[data-tab=dataInfo]');
+  console.log('активный таб' + activeTab);
+
+  return activeTab;
+}
+
 
 function switchTab() {
-  titlesArray.forEach((item, index) => {
+  tabsButtons.forEach((item) => {
     item.addEventListener('click', () => {
-      console.log('дошли до сюда');
-      if (!item.classList.contains('exercise-pass__duration-item--active')) {
-        console.log('здесь');
-        let activeTabTitle = tabsTitlesList.querySelector('exercise-pass__duration-item--active');
-        activeTabTitle.classList.remove('exercise-pass__duration-item--active');
-        item.classList.add('exercise-pass__duration-item--active');
-        let activeTab = tabsContentItems.querySelector('tab-list__item--current');
-        activeTab.classList.remove('tab-list__item--current');
-        tabsContentArray[index].classList.add('tab-list__item--current');
+      console.log('клик');
+
+      if (isButtonActive(item)) {
+
+        return;
       }
+
+      let activeButton = findActiveButton();
+      console.log(activeButton);
+      let activeData = activeButton.dataset.duration;
+      //let activeData = activeButton.dataset;
+      let activeTab = findActiveTab(activeData);
+
+      activeButton.classList.remove('exercise-pass__duration-item--active');
+      activeTab.classList.remove('tab-list__item--current');
+
+      let itemData = item.dataset.duration;
+      let itemTab = findActiveTab(itemData);
+
+      item.classList.add('exercise-pass__duration-item--active');
+      itemTab.classList.remove('tab-list__item--current');
+
+
     });
   });
 }
