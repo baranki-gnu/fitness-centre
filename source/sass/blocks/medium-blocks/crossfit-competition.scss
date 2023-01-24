@@ -1,0 +1,220 @@
+.crossfit-competition {
+  width: 100%;
+  background-color: $color-default-white;
+}
+
+.crossfit-competition__wrap {
+  width: 100%;
+  max-width: 1210px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 43.1% 56.9%;
+}
+
+.crossfit-competition__info-wrap {
+  width: 100%;
+  height: 100%;
+  color: $color-default-white;
+  background-color: $color-torch-red;
+}
+
+.crossfit-competition__info-innerwrap {
+  width: 100%;
+  max-width: 383px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 83px 20px;
+  display: grid;
+  grid-template-columns: 58.6% auto 26.82%;
+  grid-template-rows: min-content min-content min-content;
+}
+
+.crossfit-competition__info-innerwrap h3 {
+  margin: 0;
+  margin-top: 4px;
+  font-family: $family-alumni;
+  font-size: 82px;
+  line-height: 78.72px;
+  letter-spacing: 0.03em;
+  color: $color-default-white;
+  text-align: center;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.crossfit-competition__info-innerwrap dl {
+  margin-top: 0;
+  margin-bottom: 0;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.crossfit-competition__info-innerwrap span {
+  width: min-content;
+  margin: 0;
+  margin-top: 6px;
+  display: inline-block;
+  vertical-align: top;
+  font-family: $family-roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.crossfit-competition__info-innerwrap dd,
+.crossfit-competition__info-innerwrap b {
+  font-family: $family-roboto;
+  font-weight: 700;
+  font-size: 40px;
+  //line-height: 60px;
+}
+
+.crossfit-competition__info-innerwrap b {
+  display: inline-block;
+  vertical-align: text-top;
+  line-height: 40px;
+}
+
+.crossfit-competition__info-innerwrap dd {
+  margin: 0;
+  margin-bottom: 5px;
+  line-height: 60px;
+}
+
+.crossfit-competition__info-innerwrap dt {
+  margin-left: 2px;
+  padding-bottom: 5px;
+  box-shadow: 0 1px 0 0 $color-default-white;
+}
+
+.crossfit-competition__info-innerwrap dt:first-child {
+  margin-right: 27px;
+}
+
+.crossfit-competition__info-innerwrap p {
+  margin-top: 0;
+  margin-bottom: 45px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  grid-column: 1/4;
+  grid-row: 2/3;
+}
+
+.crossfit-competition__info-innerwrap a {
+  width: 100%;
+  padding: 26px;
+  display: flex;
+  justify-content: center;
+  grid-column: 1/4;
+  grid-row: 3/4;
+}
+
+.crossfit-competition__image-wrap img,
+.crossfit-competition__image-wrap picture {
+  max-width: 100%;
+  height: 100%;
+  display: block;
+  //max-height: 500px;
+  aspect-ratio: 1.32;
+  object-fit: cover;
+}
+
+@media (max-width: ($vp-1200 - 1px)) {
+  .crossfit-competition__wrap {
+    grid-template-columns: 43.06% 56.93%;
+  }
+
+  .crossfit-competition__info-wrap {
+    display: flex;
+  }
+
+  .crossfit-competition__info-innerwrap {
+    max-width: 232px;
+    height: min-content;
+    margin: auto;
+    padding: 47px 15px;
+    grid-template-columns: 57.92% auto 27.72%;
+  }
+
+  .crossfit-competition__info-innerwrap h3 {
+    font-size: 48px;
+    line-height: 46.08px;
+  }
+
+  .crossfit-competition__info-innerwrap p {
+    margin-bottom: 30px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .crossfit-competition__info-innerwrap b {
+    margin-top: 3px;
+    margin-right: 4px;
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .crossfit-competition__info-innerwrap span {
+    margin-top: 2px;
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  .crossfit-competition__info-innerwrap a {
+    margin-bottom: auto;
+    padding: 13px;
+    font-size: 10px;
+    line-height: 11.72px;
+    border-width: 2px;
+  }
+
+  .crossfit-competition__info-innerwrap dd {
+    display: flex;
+  }
+
+  .crossfit-competition__info-innerwrap dt {
+    padding-bottom: 0;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .crossfit-competition__info-innerwrap dt:first-child {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: ($vp-768 - 1px)) {
+  .crossfit-competition__wrap {
+    width: 100%;
+    max-width: 100%;
+    min-width: 320px;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .crossfit-competition__info-wrap {
+    min-width: 232px;
+  }
+
+  .crossfit-competition__info-innerwrap {
+    //max-width: 100%;
+    min-width: 232px;
+    padding-bottom: 52px;
+  }
+
+  .crossfit-competition__image-wrap {
+    min-width: 232px;
+  }
+
+  .crossfit-competition__image-wrap img,
+  .crossfit-competition__image-wrap picture {
+    width: 100%;
+    //max-width: 100%;
+    //min-width: 232px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+}
+
