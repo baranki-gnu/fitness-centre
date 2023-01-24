@@ -2,7 +2,7 @@ let tabsButtonsList = document.querySelector('[data-tabs-buttons]');
 let tabsButtons = Array.from(tabsButtonsList.querySelectorAll('[data-duration]'));
 
 function findActiveButton() {
-  let activeButton = tabsButtonsList.querySelector('.exercise-pass__duration-item--active');
+  let activeButton = tabsButtonsList.querySelector('.exercise-pass__duration-item--active button');
   console.log(activeButton);
 
   return activeButton;
@@ -42,13 +42,21 @@ function switchTab() {
       let activeButton = findActiveButton();
       console.log(activeButton);
       let activeData = activeButton.dataset.duration;
+      //let activeDataString = Object.prototype.toString.call(activeData);
+      //let activeDataString = activeData.toString();
       //let activeData = activeButton.dataset;
+      console.log('данные активной кнопки' + activeData);
       let activeTab = findActiveTab(activeData);
+
 
       activeButton.classList.remove('exercise-pass__duration-item--active');
       activeTab.classList.remove('tab-list__item--current');
 
       let itemData = item.dataset.duration;
+
+
+      //console.log(item.dataset.duration);
+
       let itemTab = findActiveTab(itemData);
 
       item.classList.add('exercise-pass__duration-item--active');
