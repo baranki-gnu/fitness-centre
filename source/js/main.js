@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {switchTab} from './utils/tabs-switch';
-
+import {swiper} from './modules/swiper-slider';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
