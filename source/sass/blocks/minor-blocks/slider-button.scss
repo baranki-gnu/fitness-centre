@@ -1,0 +1,15 @@
+.slider-button svg {
+  fill: none;
+  stroke: $color-dark-gray;
+  stroke-width: 1px;
+}
+
+.slider-button--prev svg {
+  transform: rotate(180deg);
+}
+
+.slider-button:hover svg,
+.slider-button:active svg,
+.slider-button:focus svg {
+  stroke: $color-resolution-blue;
+}

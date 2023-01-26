@@ -1353,11 +1353,96 @@ button,
   display: none;
 }
 
+.strengths {
+  background-color: #f8f9fc;
+  padding-top: 146px;
+  padding-bottom: 91px;
+}
+
 .strengths h2 {
+  margin: 0 auto;
+  margin-bottom: 55px;
+  font-family: "Roboto Condensed", sans-serif, "Arial";
   font-weight: 600;
   font-size: 54px;
   line-height: 64.8px;
   color: #102654;
+  text-align: center;
+}
+
+.strengths ul {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 23.08% 1fr;
+  grid-template-columns: 1fr 23.08% 1fr;
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.strengths li {
+  width: 100%;
+  height: 100%;
+}
+
+.strengths li:first-child {
+  margin: auto;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #ffffff;
+  background-color: #1c3374;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+.strengths__item__inner-wrap {
+  max-width: 200px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin: auto;
+}
+
+.strengths__item--main__title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 74px;
+  line-height: 50px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.strengths__item--main__title span {
+  font-size: 26px;
+  line-height: 39px;
+}
+
+.strengths__item--main p {
+  text-align: center;
+}
+
+.strengths b {
+  font-weight: 700;
+  font-size: 71px;
+  line-height: 106.5px;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: -o-linear-gradient(315deg, #d10a42 0%, #0041ca 100%);
+  background-image: linear-gradient(135deg, #d10a42 0%, #0041ca 100%);
 }
 
 .crossfit-competition {
@@ -1511,6 +1596,151 @@ button,
   object-fit: cover;
 }
 
+.coaches {
+  padding-top: 106px;
+  padding-bottom: 91px;
+}
+
+.coaches__wrap {
+  max-width: 1210px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.coaches__title {
+  margin: 0 auto;
+  padding-bottom: 48px;
+  text-align: left;
+}
+
+.coaches__outer-wrap {
+  width: 100%;
+  max-width: 1302px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.coaches__wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.coach-card {
+  width: 100%;
+  max-width: 260px;
+  max-height: 294px;
+  aspect-ratio: 0.88;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.coach-card h3 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 100%;
+  font-family: "Roboto Condensed", sans-serif, "Arial";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.coach-card span {
+  display: none;
+}
+
+.coach-card ul {
+  display: none;
+}
+
+.coach-card img,
+.coach-card picture {
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.coach-card:hover h3,
+.coach-card--check h3 {
+  margin: 0 auto;
+  position: static;
+  text-align: center;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  z-index: 10;
+}
+
+.coach-card:hover span,
+.coach-card--check span {
+  margin: 0 auto 35px auto;
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  color: #b6bdcc;
+  text-align: center;
+  z-index: 10;
+}
+
+.coach-card:hover ul,
+.coach-card--check ul {
+  margin: 0 auto;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  list-style-type: disc;
+  z-index: 10;
+  overflow-y: auto;
+}
+
+.coach-card:hover li:not(:last-child),
+.coach-card--check li:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.coach-card:hover img,
+.coach-card:hover picture,
+.coach-card--check img,
+.coach-card--check picture {
+  height: 100%;
+  width: auto;
+  aspect-ratio: 0.88;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.coach-card:hover,
+.coach-card--check {
+  padding: 15px;
+  background-color: rgba(16, 38, 84, 0.89);
+}
+
 .button {
   padding: 27px;
   font-family: "Roboto Condensed", sans-serif, "Arial";
@@ -1551,6 +1781,24 @@ button,
 
 .logo-block__link svg {
   display: block;
+}
+
+.slider-button svg {
+  fill: none;
+  stroke: #afafaf;
+  stroke-width: 1px;
+}
+
+.slider-button--prev svg {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.slider-button:hover svg,
+.slider-button:active svg,
+.slider-button:focus svg {
+  stroke: #1c3374;
 }
 
 /* @mixin hover-focus {
