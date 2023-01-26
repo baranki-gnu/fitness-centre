@@ -11,18 +11,46 @@
 .coaches__title {
   margin: 0 auto;
   padding-bottom: 48px;
+  font-family: $family-alumni;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 64.8px;
   text-align: left;
 }
 
 .coaches__outer-wrap {
   width: 100%;
   max-width: 1302px;
+  margin-left: auto;
+  margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
+  position: relative;
+  overflow: hidden;
 }
 
 .coaches__wrap {
-  width: 100%;
+  width: 93%;
+  max-width: 1210px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
+.coaches__button {
+  width: 16px;
+  height: 32px;
+}
+
+.coaches__button--prev {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.coaches__button--next {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}

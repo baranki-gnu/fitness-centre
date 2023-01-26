@@ -7,6 +7,11 @@
   padding-left: 25px;
 }
 
+.container--coaches {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 @media (max-width: ($vp-1200 - 1px)) {
   .container {
     max-width: 100%;
@@ -17,6 +22,7 @@
   .container--central {
     padding-left: 40px;
   }
+
 }
 
 @media (max-width: ($vp-768 - 1px)) {
