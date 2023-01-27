@@ -1,3 +1,8 @@
+.slider-button {
+  width: 16px;
+  height: 32px;
+}
+
 .slider-button svg {
   width: 16px;
   height: 32px;
@@ -14,4 +19,12 @@
 .slider-button:active svg,
 .slider-button:focus svg {
   stroke: $color-resolution-blue;
+}
+
+@media (max-width: ($vp-768 - 1px)) {
+  .slider-button,
+  .slider-button svg {
+    width: 10px;
+    height: 19px;
+  }
 }

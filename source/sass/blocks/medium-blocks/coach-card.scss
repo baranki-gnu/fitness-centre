@@ -1,7 +1,7 @@
 .coach-card {
   width: 100%;
   //width: 25%;
-  max-width: 260px;
+  //max-width: 260px;
   max-height: 294px;
   aspect-ratio: 0.88;
   display: flex;
@@ -13,7 +13,7 @@
 .coach-card h3 {
   //margin: 0 auto;
   width: max-content;
-  max-width: 100%;
+  max-width: 90.3%;
   font-family: $family-roboto;
   font-weight: 700;
   font-size: 18px;
@@ -21,7 +21,7 @@
   color: $color-default-white;
   //text-align: center;
   position: absolute;
-  bottom: 30px;
+  bottom: 5px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -42,8 +42,9 @@
 
 .coach-card:hover h3,
 .coach-card--check h3 {
-  margin: 0 auto;
+  margin: 38px auto 0 auto;
   position: static;
+  line-height: 22px;
   text-align: center;
   transform: none;
   z-index: 10;
@@ -51,7 +52,7 @@
 
 .coach-card:hover span,
 .coach-card--check span {
-  margin: 0 auto 35px auto;
+  margin: 0 auto 34px auto;
   display: block;
   font-size: 16px;
   line-height: 24px;
@@ -62,8 +63,9 @@
 
 .coach-card:hover ul,
 .coach-card--check ul {
+  max-width: 190px;
   margin: 0 auto;
-  padding-left: 20px;
+  padding-left: 37px;
   display: flex;
   flex-direction: column;
   font-size: 14px;
@@ -76,7 +78,7 @@
 
 .coach-card:hover li:not(:last-child),
 .coach-card--check li:not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 
 .coach-card:hover img,
@@ -96,4 +98,19 @@
 .coach-card--check {
   padding: 15px;
   background-color: rgba(16, 38, 84, 0.89);
+}
+
+@media (max-width: ($vp-1200 - 1px)) {
+  .coach-card {
+    aspect-ratio: 0.91;
+  }
+
+  .coach-card:hover img,
+  .coach-card:hover picture,
+  .coach-card--check img,
+  .coach-card--check picture {
+    height: 100%;
+    aspect-ratio: 0.91;
+  }
+
 }

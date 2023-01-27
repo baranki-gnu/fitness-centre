@@ -88,12 +88,14 @@
 .gym__video {
   max-width: 364px;
   right: 31.8%;
-  bottom: 90px;
+  bottom: 118px;
   position: absolute;
   z-index: 10;
 }
 
 .gym__video-play {
+  width: 100px;
+  height: 100px;
   padding: 0;
   display: flex;
   background-color: transparent;
@@ -103,11 +105,27 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 .gym__video-play svg {
+  width: 100px;
+  max-width: 100%;
+  max-height: 100%;
+  height: 100px;
+  display: block;
   margin: auto;
 }
+
+.gym__video-play path {
+  fill: $color-default-white;
+}
+
+.gym__video-play:hover path {
+  fill: $color-torch-red;
+}
+
+
 
 @media (max-width: ($vp-1200 - 1px)) {
   .gym__wrap {
