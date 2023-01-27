@@ -2125,6 +2125,11 @@ button,
     transform: translateX(-50%);
   }
 
+  .gym__video-play {
+    width: 73px;
+    height: 73px;
+  }
+
   .gym__photo-wrap {
     width: 100%;
     max-width: 1109px;
@@ -2164,7 +2169,11 @@ button,
   }
 
   .exercise-pass {
-    padding-bottom: 100px;
+    padding-bottom: 0;
+  }
+
+  .exercise-pass__bottom-wrap {
+    height: 100px;
   }
 
   .exercise-pass::after {
@@ -2191,7 +2200,7 @@ button,
   }
 
   .exercise-pass__duration-item:not(:last-child) {
-    margin-right: 53px;
+    margin-right: 42px;
   }
 
   .exercise-pass__duration-item button {
@@ -2223,6 +2232,10 @@ button,
 
   .pass-types__item h4 {
     line-height: 28.64px;
+  }
+
+  .strengths {
+    padding-top: 90px;
   }
 
   .strengths h2 {
@@ -2286,6 +2299,11 @@ button,
     padding-right: 135px;
     font-size: 16px;
     line-height: 22px;
+  }
+
+  .strengths__item--bottom-line {
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
 
   .strengths__item b {
@@ -2381,6 +2399,7 @@ button,
 
   .coaches__title {
     margin-bottom: 31px;
+    padding-bottom: 0;
     font-size: 42px;
     line-height: 50.4px;
     text-align: center;
@@ -2393,11 +2412,37 @@ button,
 
   .coaches__outer-wrap {
     width: calc(100% - 112px);
+    height: 100%;
     margin: 0 auto;
   }
 
+  .coaches__button--prev {
+    left: 0;
+  }
+
+  .coaches__button--next {
+    right: 0;
+  }
+
   .coach-card {
+    max-height: 100%;
     aspect-ratio: 0.91;
+  }
+
+  .coach-card h3 {
+    padding-left: 7px;
+  }
+
+  .coach-card img,
+  .coach-card picture {
+    height: 100%;
+    aspect-ratio: 0.91;
+    width: auto;
+  }
+
+  .coach-card:hover h3,
+  .coach-card--check h3 {
+    padding-left: 0;
   }
 
   .coach-card:hover img,
@@ -2405,6 +2450,7 @@ button,
   .coach-card--check img,
   .coach-card--check picture {
     height: 100%;
+    width: auto;
     aspect-ratio: 0.91;
   }
 
@@ -2431,7 +2477,8 @@ button,
     padding-right: 10px;
   }
 
-  .container--gym {
+  .container--gym,
+  .container--strengths {
     padding-left: 0;
     padding-right: 0;
   }
@@ -2590,16 +2637,17 @@ button,
     padding-right: 15px;
   }
 
-  .exercise-pass {
-    padding-bottom: 67px;
-  }
-
   .exercise-pass__wrap {
     padding-top: 65px;
     padding-bottom: 56px;
   }
 
+  .exercise-pass__bottom-wrap {
+    height: 67px;
+  }
+
   .exercise-pass h2 {
+    margin-bottom: 0;
     font-size: 32px;
     line-height: 38.4px;
   }
@@ -2629,7 +2677,7 @@ button,
 
   .pass-types__list {
     width: 100%;
-    gap: 38px;
+    gap: 36px;
   }
 
   .pass-types__item {
@@ -2644,6 +2692,7 @@ button,
 
   .pass-types__item-inner-wrap {
     padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .pass-types__price-wrap {
@@ -2675,9 +2724,34 @@ button,
     padding-bottom: 48px;
   }
 
+  .strengths {
+    padding-top: 65px;
+  }
+
   .strengths h2 {
     font-size: 32px;
     line-height: 38.4px;
+  }
+
+  .strengths ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .strengths__item {
+    width: 100%;
+  }
+
+  .strengths__item:first-child {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
   }
 
   .crossfit-competition__wrap {
@@ -2712,12 +2786,12 @@ button,
   }
 
   .coaches {
-    padding-top: 70px;
+    padding-top: 65px;
     padding-bottom: 70px;
   }
 
   .coaches__title {
-    margin-bottom: 50px;
+    margin-bottom: 39px;
     font-size: 32px;
     line-height: 38.4px;
   }
@@ -2728,6 +2802,32 @@ button,
 
   .coaches__outer-wrap {
     width: calc(100% - 64px);
+  }
+
+  .coach-card,
+  .coach-card img,
+  .coach-card picture,
+  .coach-card:hover img,
+  .coach-card:hover picture,
+  .coach-card--check img,
+  .coach-card--check picture {
+    min-width: 226px;
+    aspect-ratio: 0.83;
+  }
+
+  .coach-card:hover h3,
+  .coach-card--check h3 {
+    margin-top: 30px;
+  }
+
+  .coach-card:hover span,
+  .coach-card--check span {
+    margin-bottom: 31px;
+  }
+
+  .coach-card:hover ul,
+  .coach-card--check ul {
+    margin-left: 0;
   }
 
   .logo-block__link svg {

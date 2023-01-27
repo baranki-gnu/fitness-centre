@@ -100,7 +100,11 @@
 
 @media (max-width: ($vp-1200 - 1px)) {
   .exercise-pass {
-    padding-bottom: 100px;
+    padding-bottom: 0;
+  }
+
+  .exercise-pass__bottom-wrap {
+    height: 100px;
   }
 
   .exercise-pass::after {
@@ -127,7 +131,7 @@
   }
 
   .exercise-pass__duration-item:not(:last-child) {
-    margin-right: 53px;
+    margin-right: 42px;
   }
 
   .exercise-pass__duration-item button {
@@ -138,16 +142,17 @@
 }
 
 @media (max-width: ($vp-768 - 1px)) {
-  .exercise-pass {
-    padding-bottom: 67px;
-  }
-
   .exercise-pass__wrap {
     padding-top: 65px;
     padding-bottom: 56px;
   }
 
+  .exercise-pass__bottom-wrap {
+    height: 67px;
+  }
+
   .exercise-pass h2 {
+    margin-bottom: 0;
     font-size: 32px;
     line-height: 38.4px;
   }

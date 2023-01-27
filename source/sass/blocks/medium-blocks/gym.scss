@@ -125,8 +125,6 @@
   fill: $color-torch-red;
 }
 
-
-
 @media (max-width: ($vp-1200 - 1px)) {
   .gym__wrap {
     width: 100%;
@@ -159,6 +157,11 @@
     right: 15%;
     bottom: 98px;
     transform: translateX(-50%);
+  }
+
+  .gym__video-play {
+    width: 73px;
+    height: 73px;
   }
 
   .gym__photo-wrap {

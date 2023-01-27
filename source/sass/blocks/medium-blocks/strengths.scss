@@ -165,6 +165,10 @@
 }
 
 @media (max-width: ($vp-1200 - 1px)) {
+  .strengths {
+    padding-top: 90px;
+  }
+
   .strengths h2 {
     font-size: 42px;
     line-height: 50.4px;
@@ -215,6 +219,10 @@
     line-height: 22px;
   }
 
+  .strengths__item--bottom-line {
+    box-shadow: none;
+  }
+
 
 
   .strengths__item b {
@@ -235,9 +243,27 @@
 }
 
 @media (max-width: ($vp-768 - 1px)) {
+  .strengths {
+    padding-top: 65px;
+  }
+
   .strengths h2 {
     font-size: 32px;
     line-height: 38.4px;
+  }
+
+  .strengths ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .strengths__item {
+    width: 100%;
+  }
+
+  .strengths__item:first-child {
+    order: 2;
   }
 
 }

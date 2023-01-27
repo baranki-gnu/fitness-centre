@@ -158,7 +158,7 @@
 @media (max-width: ($vp-768 - 1px)) {
   .pass-types__list {
     width: 100%;
-    gap: 38px;
+    gap: 36px;
   }
 
   .pass-types__item {
@@ -173,6 +173,7 @@
 
   .pass-types__item-inner-wrap {
     padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .pass-types__price-wrap {
