@@ -1,0 +1,21 @@
+.main-content__contacts-form-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.main-content__form {
+  grid-column: 1/2;
+}
+
+.main-content__contacts {
+  grid-column: 2/3;
+}
+
+@media (max-width: ($vp-1200 - 1px)) {
+  .main-content__contacts-form-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+}

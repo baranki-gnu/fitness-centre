@@ -9,7 +9,18 @@
 
 .logo-block__link svg {
   //margin-left: auto;
+  width: 122px;
+  height: 44px;
   display: block;
+}
+
+.logo-block--footer svg {
+  width: 88px;
+  height: 32px;
+}
+
+.logo-block--footer .logo-block__link {
+  width: min-content;
 }
 
 @media (max-width: ($vp-1200 - 1px)) {
@@ -32,6 +43,12 @@
 
   .logo-block {
     padding-top: 0;
+  }
+
+  .logo-block--footer {
+    position: absolute;
+    top: 46px;
+    left: 15px;
   }
 
 }

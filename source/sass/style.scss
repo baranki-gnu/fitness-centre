@@ -25,6 +25,9 @@
 @import "blocks/major-blocks/page/page";
 @import "blocks/major-blocks/header/main-header";
 @import "blocks/major-blocks/header/header-navigation";
+@import "blocks/major-blocks/main-content/main-content";
+@import "blocks/major-blocks/footer/main-footer";
+@import "blocks/major-blocks/footer/footer-navigation";
 
 //Medium Blocks
 @import "blocks/medium-blocks/central-screen";
@@ -36,7 +39,12 @@
 @import "blocks/medium-blocks/crossfit-competition";
 @import "blocks/medium-blocks/coaches";
 @import "blocks/medium-blocks/coach-card";
-
+@import "blocks/medium-blocks/promos";
+@import "blocks/medium-blocks/reviews";
+@import "blocks/medium-blocks/trial-training";
+@import "blocks/medium-blocks/contacts";
+@import "blocks/medium-blocks/form";
+@import "blocks/medium-blocks/social-media";
 
 //Minor Blocks
 
@@ -44,6 +52,7 @@
 @import "blocks/minor-blocks/title";
 @import "blocks/minor-blocks/logo-block";
 @import "blocks/minor-blocks/slider-button";
+@import "blocks/minor-blocks/input-wrap";
 
 // ---------------------------------
 

@@ -1,0 +1,19 @@
+.social-media__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+  list-style-type: none;
+}
+
+.social-media__list svg {
+  width: 25px;
+  height: 25px;
+  fill: $color-default-white;
+
+}
+
+.social-media__list a:hover svg {
+  fill: $color-persian-blue;
+}

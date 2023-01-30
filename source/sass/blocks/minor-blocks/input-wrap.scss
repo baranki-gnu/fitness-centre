@@ -1,0 +1,22 @@
+.input-wrap input {
+  width: 100%;
+  height: 31px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: $family-roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.41px;
+  color: $color-default-white;
+  border-width: 0;
+  border-bottom: 1px solid $color-light-slate-gray;
+  background-color: transparent;
+}
+
+.input-wrap input::placeholder {
+  font-family: $family-roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.41px;
+  color: $color-default-white;
+}

@@ -1,6 +1,6 @@
 import Swiper from '../vendor/swiper';
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper1', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -8,6 +8,7 @@ const swiper = new Swiper('.swiper', {
   slidesPerView: 4,
   spaceBetween: 40,
   slidesPerGroup: 4,
+  slidesOffsetBefore: -15,
   freeMode: true,
 
   breakpoints: {
@@ -21,12 +22,14 @@ const swiper = new Swiper('.swiper', {
       slidesPerView: 2,
       spaceBetween: 30,
       slidesPerGroup: 2,
+      slidesOffsetBefore: -44,
     },
 
     1200: {
       slidesPerView: 4,
       spaceBetween: 40,
       slidesPerGroup: 4,
+      slidesOffsetBefore: -15,
     },
   },
 
@@ -35,7 +38,23 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
 });
 
-export {swiper};
+const swiper2 = new Swiper('.swiper2', {
+  // Optional parameters
+  //direction: 'horizontal',
+  //loop: false,
+  //loopFillGroupWithBlank: true,
+  //slidesPerView: 1,
+  //slidesPerGroup: 1,
+  //spaceBetween: 60,
+  //freeMode: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+export {swiper, swiper2};

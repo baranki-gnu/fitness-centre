@@ -146,6 +146,19 @@
     aspect-ratio: 0.99;
   }
 
+  .pass-types__item-inner-wrap {
+    padding-top: 62px;
+  }
+
+  .pass-types__item--active .pass-types__item-inner-wrap {
+    padding-top: 55px;
+  }
+
+  .pass-types__item--active a {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
   .pass-types__item:not(:last-child) {
     margin-right: 0;
   }

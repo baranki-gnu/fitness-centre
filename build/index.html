@@ -7,11 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Описание проекта">
   <title>Фитнес центр SUPERGYM</title>
-  <!--<link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicons/icon-180.png">--><!-- 180×180 -->
   <link rel="preload" href="fonts/alumni-sans-600.woff2" as="font">
   <link rel="preload" href="fonts/alumni-sans-700.woff2" as="font">
+  <link rel="preload" href="fonts/alumni-sans-800.woff2" as="font">
   <link rel="preload" href="fonts/roboto-condensed-300.woff2" as="font">
   <link rel="preload" href="fonts/roboto-condensed-400.woff2" as="font">
   <link rel="preload" href="fonts/roboto-condensed-700.woff2" as="font">
@@ -92,7 +90,7 @@
           </div>
           <div class="gym__photo-wrap">
             <picture>
-              <source media="(max-width: 768px)"
+              <source media="(max-width: 767px)"
                 srcset="img/content/fitness-centre-mobile@1x.webp 1x, img/content/fitness-centre-mobile@2x.webp 2x"
                 type="image/webp">
               <source media="(max-width: 1199px)"
@@ -107,8 +105,9 @@
             </picture>
           </div>
           <div class="gym__video">
-            <a class="gym__video-link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
-              <picture>
+            <div class="gym__video-wrap">
+              <div class="gym__video-cover">
+                <picture>
                 <source media="(max-width: 767px)"
                   srcset="img/content/video-picture-mobile@1x.webp 1x, img/content/video-picture-mobile@2x.webp 2x"
                   type="image/webp">
@@ -119,13 +118,15 @@
                   srcset="img/content/video-picture-desktop@1x.jpg 1x, img/content/video-picture-desktop@2x.jpg 2x"
                   width="364" height="228" loading="lazy" alt="г. Санкт Петербург, ул. Большая Конюшенная, 19/8.">
               </picture>
-            </a>
+              </div>
+              <iframe src="https://www.youtube.com/embed/9TZXsZItgdw" width="364" height="228" frameborder="0" > </iframe>
+            </div>
             <button class="gym__video-play" type="button">
               <svg width="73" height="73" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="36.5" cy="36.5" r="35.5" stroke="url(#paint0_linear_13506_23)" stroke-opacity="0.2"
                   stroke-width="2" />
                 <circle cx="36" cy="36" r="26" fill="url(#paint1_linear_13506_23)" />
-                <path d="M42 36L33 41.1962L33 30.8038L42 36Z"/>
+                <path d="M42 36L33 41.1962L33 30.8038L42 36Z" />
                 <defs>
                   <linearGradient id="paint0_linear_13506_23" x1="14.435" y1="2.1949e-05" x2="77.2232" y2="7.77042"
                     gradientUnits="userSpaceOnUse">
@@ -373,7 +374,7 @@
         </div>
 
         <div class="coaches__arrows-slider-container">
-          <div class="swiper coaches__outer-wrap">
+          <div class="swiper swiper1 coaches__outer-wrap">
             <div class="swiper-wrapper coaches__wrap container container--coaches">
               <div class="swiper-slide coaches__personal-card coach-card">
                 <picture>
@@ -499,7 +500,8 @@
                 <span>ABS</span>
                 <ul class="coach-card__expertise-list">
                   <li class="coach-card__expertise-item">Certified Level&nbsp;5 Trainer</li>
-                  <li class="coach-card__expertise-item">Победитель соревнований &quot;1000 и&nbsp;1&nbsp;упражнение для укрепления
+                  <li class="coach-card__expertise-item">Победитель соревнований &quot;1000 и&nbsp;1&nbsp;упражнение для
+                    укрепления
                     пресса"</li>
                   <li class="coach-card__expertise-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                 </ul>
@@ -522,12 +524,6 @@
         <div class="strengths__wrap container container--strengths">
           <h2 class="strengths__title title">Наши преимущества</h2>
           <ul class="strengths__list">
-            <li class="strengths__item strengths__item--main">
-              <div class="strengths__item__inner-wrap">
-                <h3 class="strengths__item-title strengths__item--main__title">100 <span>Тренажеров</span></h3>
-                <p>Современные тренажеры на&nbsp;все группы мышц</p>
-              </div>
-            </li>
             <li class="strengths__item strengths__item--bottom-line">
               <div class="strengths__item-first-column">
                 <b>900</b>
@@ -548,6 +544,12 @@
                 <p>Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей парковке</p>
               </div>
             </li>
+            <li class="strengths__item strengths__item--main">
+              <div class="strengths__item__inner-wrap">
+                <h3 class="strengths__item-title strengths__item--main__title">100 <span>Тренажеров</span></h3>
+                <p>Современные тренажеры на&nbsp;все группы мышц</p>
+              </div>
+            </li>
             <li class="strengths__item">
               <div class="strengths__item-first-column">
                 <b>350</b>
@@ -565,7 +567,7 @@
               </div>
               <div class="strengths__item-second-column">
                 <h3 class="strengths__item-title">Тренерский опыт</h3>
-                <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+                <p>Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</p>
               </div>
             </li>
           </ul>
@@ -573,32 +575,50 @@
       </section>
       <section class="main-content__promos promos">
         <div class="promos__wrap container">
-          <h2 class="promos__title">Акции</h2>
-          <div class="promos__best-deal-wrap">
-            <div class="promos__best-deal-info">
-              <h3 class="visually-hidden">Годовой абонемент по супервыгодной цене</h3>
-              <span>Год</span>
-              <b>4999</b>
-              <p>Безлимитный абонемент в тренажерный зал</p>
+          <h2 class="promos__title title">Акции</h2>
+          <div class="promos__inner-wrap">
+            <div class="promos__best-deal-wrap">
+              <div class="promos__best-deal-info">
+                <div class="promos__best-deal-text-wrap">
+                  <h3 class="visually-hidden">Годовой абонемент по&nbsp;супервыгодной цене</h3>
+                  <span>Год</span>
+                  <b>4999</b>
+                  <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
+                </div>
+                <div class="promos__best-deal-link-wrap">
+                  <a class="promo__link promo__link--best-deal" href="#">подробнее</a>
+                </div>
+              </div>
+              <div class="promos__best-deal-image">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/content/promo-coach-desktop@1x.webp 1x, img/content/promo-coach-desktop@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(max-width: 1999px)"
+                    srcset="img/content/promo-coach-tablet@1x.webp 1x, img/content/promo-coach-tablet@2x.webp 2x"
+                    type="image/webp">
+                  <img src="img/content/promo-coach-desktop@1x.jpg"
+                    srcset="img/content/promo-coach-desktop@1x.jpg 1x, img/content/promo-coach-desktop@2x.jpg 2x"
+                    width="280" height="462" loading="lazy"
+                    alt="Достигните своей наилучшей физической формы в фитнес центре SUPERGYM.">
+                </picture>
+              </div>
             </div>
-            <a class="promo__best-deal-link" href="#">подробнее</a>
-            <picture>
-              <source srcset="img/content/promo-coach@1x.webp 1x, img/content/promo-coach@2x.webp 2x" type="image/webp">
-              <img src="img/content/promo-coach@1x.jpg"
-                srcset="img/content/promo-coach@1x.jpg 1x, img/content/promo-coachp@2x.jpg 2x" width="280" height="462"
-                loading="lazy" alt="Достигните своей наилучшей физической формы в фитнес центре SUPERGYM.">
-            </picture>
-          </div>
-          <div class="promos__extra">
-            <div class="promos__extra-deal">
-              <h3 class="promos__extra-title">Месяц бесплатно</h3>
-              <p>Приведи друга, получи абонемент в подарок</p>
-              <a class="promo__best-deal-link" href="#">подробнее</a>
-            </div>
-            <div class="promos__extra-deal">
-              <h3 class="promos__extra-title">Скидка 20%</h3>
-              <p>Корпоративный фитнес с командой</p>
-              <a class="promo__best-deal-link" href="#">подробнее</a>
+            <div class="promos__extra">
+              <div class="promos__extra-border-wrap">
+                <div class="promos__extra-deal promos__extra-deal--free-month">
+                  <h3 class="promos__extra-title">Месяц бесплатно</h3>
+                  <p>Приведи друга, получи <br>абонемент в&nbsp;подарок</p>
+                  <a class="promo__link promo__link--extra-deal" href="#">подробнее</a>
+                </div>
+              </div>
+              <div class="promos__extra-border-wrap">
+                <div class="promos__extra-deal promos__extra-deal--20-percent">
+                  <h3 class="promos__extra-title">Скидка&nbsp;20%</h3>
+                  <p>Корпоративный фитнес с&nbsp;командой</p>
+                  <a class="promo__link promo__link--extra-deal" href="#">подробнее</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -606,93 +626,121 @@
       <section class="main-content__reviews reviews">
         <div class="reviews__wrap container">
           <h2 class="reviews__title title">Отзывы</h2>
-          <div class="reviews__prev-button slider-button slider-button--prev">
-            <svg focusable="false" width="16" height="32" aria-label="Предыдущий слайд">
-              <use xlink:href="img/sprite/sprite.svg#arrow"></use>
-            </svg>
+          <div class="reviews__list-buttons-wrap">
+            <div class="swiper-button-prev swiper-button-prev2 reviews__prev-button slider-button slider-button--prev">
+              <svg focusable="false" width="16" height="32" aria-label="Предыдущий слайд">
+                <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+            <div class="swiper-button-next swiper-button-next2 reviews__next-button slider-button">
+              <svg focusable="false" width="16" height="32" aria-label="Следующий слайд">
+                <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+            <div class="swiper swiper2 reviews__container">
+              <div class="swiper-wrapper reviews__inner-container">
+                <div class="swiper-slide reviews__item reviews__item--active">
+                  <div class="reviews__item-wrap">
+                    <picture>
+                      <source srcset="img/content/review-photo@1x.webp 1x, img/content/review-photo@2x.webp 2x"
+                        type="image/webp">
+                      <img src="img/content/review-photo@1x.jpg"
+                        srcset="img/content/review-photo@1x.jpg 1x, img/content/review-photo@2x.jpg 2x" width="80"
+                        height="80" loading="lazy" alt="Фотография клиента SUPREGYM.">
+                    </picture>
+                    <h3>Анна Орлова</h3>
+                    <blockquote>
+                      «Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют,
+                      персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей»
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__item .reviews__item--active">
+                  <div class="reviews__item-wrap">
+                    <picture>
+                      <source srcset="img/content/review-photo-2@1x.webp 1x, img/content/review-photo-2@2x.webp 2x"
+                        type="image/webp">
+                      <img src="img/content/review-photo-2@1x.jpg"
+                        srcset="img/content/review-photo-2@1x.jpg 1x, img/content/review-photo-2@2x.jpg 2x" width="80"
+                        height="80" loading="lazy" alt="Фотография клиента SUPREGYM.">
+                    </picture>
+                    <h3>Эразм Козодоев</h3>
+                    <blockquote>
+                      «Уже год хожу на карате и CrossFit-а. Тренеры четкие, все по делу. Увеличил бицепсы и ловкость рук,
+                      ног
+                      и ушей»
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="reviews__next-button slider-button">
-            <svg focusable="false" width="16" height="32" aria-label="Следующий слайд">
-              <use xlink:href="img/sprite/sprite.svg#arrow"></use>
-            </svg>
-          </div>
-          <ul class="reviews__list">
-            <li class="reviews__item">
-              <picture>
-                <source srcset="img/content/review-photo@1x.webp 1x, img/content/review-photo@2x.webp 2x"
-                  type="image/webp">
-                <img src="img/content/coach-1-desktop@1x.jpg"
-                  srcset="img/content/review-photo@1x.jpg 1x, img/content/review-photo@2x.jpg 2x" width="260"
-                  height="294" loading="lazy" alt="Фотография клиента SUPREGYM.">
-              </picture>
-              <h3>Анна Орлова</h3>
-              <blockquote>
-                «Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют,
-                персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»
-              </blockquote>
-            </li>
-            <li class="reviews__item">
-              <picture>
-                <source srcset="img/content/review-photo@1x.webp 1x, img/content/review-photo@2x.webp 2x"
-                  type="image/webp">
-                <img src="img/content/coach-1-desktop@1x.jpg"
-                  srcset="img/content/review-photo@1x.jpg 1x, img/content/review-photo@2x.jpg 2x" width="260"
-                  height="294" loading="lazy" alt="Фотография клиента SUPREGYM.">
-              </picture>
-              <h3>Эразм Козодоев</h3>
-              <blockquote>
-                «Уже год хожу на карате и CrossFit-а. Тренеры четкие, все по делу. Увеличил бицепсы и ловкость рук, ног
-                и ушей»
-              </blockquote>
-            </li>
-          </ul>
+
         </div>
       </section>
       <div class="main-content__contacts-form-wrap">
         <section class="main-content__form trial-training">
-          <div class="trial-training__inner-wrap">
-            <h2 class="trial-training__title title">Бесплатное занятие</h2>
-            <form class="trial-training__form" action="https://echo.htmlacademy.ru" method="post">
-              <div class="form__name-field input-textarea-wrap" data-name-input>
-                <label class="form__name-field-label">
-                  <span class="visually-hidden">Введите имя</span>
-                  <input type="text" placeholder="Имя" name="user-name" required minlength="1">
-                </label>
-              </div>
-              <div class="form__telephone-field input-textarea-wrap" data-telephone-input>
-                <label class="form__telephone-field-label">
-                  <span class="visually-hidden">Введите телефон</span>
-                  <input type="tel" placeholder="Телефон" name="user-telephone" required>
-                </label>
-              </div>
-              <button type="submit" data-send-button>Отправить</button>
-            </form>
+          <div class="trial-training__outer-wrap">
+            <div class="trial-training__inner-wrap">
+              <h2 class="trial-training__title title">Бесплатное занятие</h2>
+              <form class="trial-training__form form" action="https://echo.htmlacademy.ru" method="post">
+                <div class="form__name-field input-wrap" data-name-input>
+                  <label class="form__name-field-label">
+                    <span class="visually-hidden">Введите имя</span>
+                    <input type="text" placeholder="Имя" name="user-name" required minlength="1">
+                  </label>
+                </div>
+                <div class="form__telephone-field input-wrap" data-telephone-input>
+                  <label class="form__telephone-field-label">
+                    <span class="visually-hidden">Введите телефон</span>
+                    <input type="tel" placeholder="Телефон" name="user-telephone" required>
+                  </label>
+                </div>
+                <div class="form__submit-wrap">
+                  <button type="submit" data-send-button>Отправить</button>
+                </div>
+              </form>
+            </div>
           </div>
         </section>
         <section class="main-content__contacts contacts">
-          <div class="contacts__wrap">
-            <h2 class="contacts__title title">Контакты</h2>
-            <dl class="contacts__list">
-              <dt>Адрес:</dt>
-              <dd>г. Омск, ул. 60 лет Октября, 7</dd>
-              <dt>Телефон:</dt>
-              <dd>
-                <a href="tel:88005555555">8-800-555-55-55</a>
-              </dd>
-              <dt>График работы:</dt>
-              <dd>Пн-Вс: с 8:00 до 22:00</dd>
-              <dt>Email:</dt>
-              <dd>
-                <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
-              </dd>
-            </dl>
+          <div class="contacts__outer-wrap">
+            <div class="contacts__inner-wrap">
+              <h2 class="contacts__title title">Контакты</h2>
+              <ul class="contacts__list">
+                <li class="contacts__list-item">
+                  <div class="contacts__list-item-wrap">
+                    <h3>Адрес:</h3>
+                    <span>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</span>
+                  </div>
+                </li>
+                <li class="contacts__list-item contacts__list-item--phone">
+                  <div class="contacts__list-item-wrap">
+                    <h3>Телефон:</h3>
+                    <a href="tel:88005555555">8-800-555-55-55</a>
+                  </div>
+                </li>
+                <li class="contacts__list-item contacts__list-item--hours">
+                  <div class="contacts__list-item-wrap">
+                    <h3>График работы:</h3>
+                    <span>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</span>
+                  </div>
+                </li>
+                <li class="contacts__list-item contacts__list-item--mail">
+                  <div class="contacts__list-item-wrap">
+                    <h3>Email:</h3>
+                    <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
       </div>
     </main>
     <footer class="page__footer main-footer">
-      <div class="main-footer__wrap container">
-        <div class="main-footer__logo-wrap logo-block">
+      <div class="main-footer__wrap container container--footer">
+        <div class="main-footer__logo-wrap logo-block logo-block--footer">
           <a class="logo-block__link">
             <svg focusable="false" width="88" height="32" aria-label="Фитнес центр SUPERGYM">
               <use xlink:href="img/sprite/sprite.svg#supergym-logo"></use>
@@ -704,16 +752,16 @@
             <li class="footer-navigation__item">
               <a class="footer-navigation__link" href="#">Услуги</a>
             </li>
-            <li class="footer-navigation__item">
+            <li class="footer-navigation__item footer-navigation__item--pass">
               <a class="footer-navigation__link" href="#">Абонементы</a>
             </li>
-            <li class="footer-navigation__item">
+            <li class="footer-navigation__item footer-navigation__item-promo">
               <a class="footer-navigation__link" href="#">Акции</a>
             </li>
-            <li class="footer-navigation__item">
+            <li class="footer-navigation__item footer-navigation__item-coach">
               <a class="footer-navigation__link" href="#">Тренеры</a>
             </li>
-            <li class="footer-navigation__item">
+            <li class="footer-navigation__item footer-navigation__item-timetable">
               <a class="footer-navigation__link" href="#">Расписание</a>
             </li>
           </ul>

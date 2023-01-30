@@ -205,16 +205,34 @@
   }
 
   .crossfit-competition__image-wrap {
+    max-width: 100%;
+    width: 100%;
     min-width: 232px;
+    overflow: hidden;
+    aspect-ratio: 0.99;
   }
 
   .crossfit-competition__image-wrap img,
   .crossfit-competition__image-wrap picture {
     width: 100%;
-    //max-width: 100%;
+    //max-width: 400%;
     //min-width: 232px;
     overflow: hidden;
     object-fit: cover;
+    //object-fit: initial;
+    //object-position: -70px 0;
+    //aspect-ratio: 1;
+  }
+}
+
+@media (max-width: (470px)) {
+  .crossfit-competition__image-wrap img,
+  .crossfit-competition__image-wrap picture {
+    width: 440px;
+    max-width: 400%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: -70px 0;
   }
 }
 

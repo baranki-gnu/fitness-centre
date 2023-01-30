@@ -120,6 +120,18 @@
   .coach-card:hover h3,
   .coach-card--check h3 {
     padding-left: 0;
+    padding-right: 6px;
+  }
+
+  .coach-card:hover span,
+  .coach-card--check span {
+    margin-bottom: 33px;
+    padding-right: 5px;
+  }
+
+  .coach-card:hover ul,
+  .coach-card--check ul {
+    padding-left: 33px;
   }
 
   .coach-card:hover img,
