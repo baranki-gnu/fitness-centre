@@ -1232,6 +1232,11 @@ button,
   fill: #ed0233;
 }
 
+.gym__video-cover--hidden,
+.gym__video-play--hidden {
+  display: none;
+}
+
 .exercise-pass {
   background-color: #f8f9fc;
   position: relative;
@@ -2255,6 +2260,8 @@ button,
 
 .reviews__item {
   display: block;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .reviews__item--active {

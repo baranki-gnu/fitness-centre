@@ -144,6 +144,11 @@
   fill: $color-torch-red;
 }
 
+.gym__video-cover--hidden,
+.gym__video-play--hidden {
+  display: none;
+}
+
 @media (max-width: ($vp-1200 - 1px)) {
   .gym__wrap {
     width: 100%;
