@@ -1319,6 +1319,10 @@ button,
   color: #102654;
 }
 
+.exercise-pass__duration-item button:hover {
+  color: #602582;
+}
+
 .exercise-pass__duration-item--active {
   -webkit-box-shadow: 0 2px 0 0 #d10a42;
   box-shadow: 0 2px 0 0 #d10a42;
@@ -1468,6 +1472,14 @@ button,
   color: #ffffff;
   background-image: -o-linear-gradient(315deg, #ed0233 0%, #003eb7 100%);
   background-image: linear-gradient(135deg, #ed0233 0%, #003eb7 100%);
+  border-width: 0;
+}
+
+.pass-types__item a:hover,
+.pass-types__item--active a:hover {
+  color: #ffffff;
+  background-image: -o-linear-gradient(315deg, #602582 0%, #00359f 100%);
+  background-image: linear-gradient(135deg, #602582 0%, #00359f 100%);
   border-width: 0;
 }
 
@@ -2555,6 +2567,12 @@ button,
   background-color: transparent;
 }
 
+.form__submit-wrap button:hover {
+  color: #102654;
+  border-color: #102654;
+  background-color: #ffffff;
+}
+
 .social-media__list {
   margin: 0;
   padding: 0;
@@ -2588,12 +2606,19 @@ button,
   background-color: transparent;
   border: 2px solid #1c3374;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .button--white {
   padding: 20px;
   color: #ffffff;
   border: 4px solid #ffffff;
+}
+
+.button--white:hover {
+  color: #102654;
+  border-color: #102654;
+  background-color: #ffffff;
 }
 
 .title {
@@ -2670,6 +2695,7 @@ button,
   border-width: 0;
   border-bottom: 1px solid #74819c;
   background-color: transparent;
+  cursor: text;
 }
 
 .input-wrap input::-webkit-input-placeholder {
@@ -2710,6 +2736,24 @@ button,
   font-size: 14px;
   line-height: 16.41px;
   color: #ffffff;
+}
+
+.input-wrap input:hover {
+  border-bottom: 2px solid #e8e8e8;
+}
+
+.input-wrap input:focus-visible {
+  outline: none;
+}
+
+.input-wrap input.valid,
+.input-wrap input.valid:hover,
+.input-wrap input.valid:active {
+  border-bottom: 2px solid #003eb7;
+}
+
+.input-wrap input.invalid {
+  border-bottom: 2px solid #ed0233;
 }
 
 /* @mixin hover-focus {

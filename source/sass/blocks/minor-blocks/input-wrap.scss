@@ -11,6 +11,7 @@
   border-width: 0;
   border-bottom: 1px solid $color-light-slate-gray;
   background-color: transparent;
+  cursor: text;
 }
 
 .input-wrap input::placeholder {
@@ -19,4 +20,22 @@
   font-size: 14px;
   line-height: 16.41px;
   color: $color-default-white;
+}
+
+.input-wrap input:hover {
+  border-bottom: 2px solid $color-whisper;
+}
+
+.input-wrap input:focus-visible {
+  outline: none;
+}
+
+.input-wrap input.valid,
+.input-wrap input.valid:hover,
+.input-wrap input.valid:active {
+  border-bottom: 2px solid $color-cobalt;
+}
+
+.input-wrap input.invalid {
+  border-bottom: 2px solid $color-torch-red;
 }

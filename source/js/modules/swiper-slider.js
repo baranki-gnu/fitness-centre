@@ -42,14 +42,7 @@ const swiper = new Swiper('.swiper1', {
 
 const swiper2 = new Swiper('.swiper2', {
   // Optional parameters
-  //direction: 'horizontal',
-  //loop: false,
-  //loopFillGroupWithBlank: true,
-  //slidesPerView: 1,
-  //slidesPerGroup: 1,
-  //spaceBetween: 60,
-  //freeMode: true,
-
+  slidesPerView: 1,
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',

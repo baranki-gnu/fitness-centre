@@ -38,6 +38,12 @@
   background-color: transparent;
 }
 
+.form__submit-wrap button:hover {
+  color: $color-sapphire;
+  border-color: $color-sapphire;
+  background-color: $color-default-white;
+}
+
 @media (max-width: ($vp-1200 - 1px)) {
   .form {
     max-width: 100%;

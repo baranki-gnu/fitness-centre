@@ -1,6 +1,9 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {switchTab} from './utils/tabs-switch';
+import {startStoringData} from './utils/form-data-storage';
+import {turnFormValidationOn} from './utils/form-validate';
+import {turnScrollOn} from './utils/scroll-to-block';
 import './modules/swiper-slider';
 import './modules/video-play';
 // ---------------------------------
@@ -12,6 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   switchTab();
+  turnScrollOn();
 
   // Modules
   // ---------------------------------
@@ -20,6 +24,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
+    startStoringData();
+    turnFormValidationOn();
 
 
   });

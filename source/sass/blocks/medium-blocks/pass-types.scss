@@ -13,7 +13,6 @@
   width: 31.03%;
   max-width: 360px;
   margin-bottom: 25px;
-
   display: flex;
   flex-direction: column;
   aspect-ratio: 0.80;
@@ -108,6 +107,13 @@
 .pass-types__item--active a {
   color: $color-default-white;
   background-image: $button-gradient;
+  border-width: 0;
+}
+
+.pass-types__item a:hover,
+.pass-types__item--active a:hover {
+  color: $color-default-white;
+  background-image: $hover-gradient;
   border-width: 0;
 }
 

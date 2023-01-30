@@ -90,6 +90,10 @@
   //border-bottom: 2px solid $color-crimson;
 }
 
+.exercise-pass__duration-item button:hover {
+  color: $color-kingfisher-daisy;
+}
+
 .exercise-pass__duration-item--active {
   box-shadow: 0 2px 0 0 $color-crimson;
 }
