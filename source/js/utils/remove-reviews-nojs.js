@@ -4,7 +4,6 @@ function removeReviewsNoJs() {
   if (reviewsContainer) {
     reviewsContainer.classList.remove('reviews__inner-container--nojs');
   }
-
 }
 
 export {removeReviewsNoJs};

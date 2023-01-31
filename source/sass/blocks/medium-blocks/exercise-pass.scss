@@ -1,7 +1,5 @@
 .exercise-pass {
-  //padding-bottom: 80px;
   background-color: $color-ghost-white;
-  //background-color: $color-default-white;
   position: relative;
 }
 
@@ -25,17 +23,11 @@
     background: url("../img/background/weight-plates@2x.png");
     background-position: -22% 30%;
   }
-  //transform: rotate(-35deg);
 }
 
 .exercise-pass__duration-wrap {
   margin-bottom: 39px;
 }
-
-//.exercise-pass__bottom-wrap {
-//  height: 120px;
-//  background-color: $color-default-white;
-//}
 
 .exercise-pass__wrap {
   padding-top: 120px;
@@ -56,18 +48,14 @@
 
 .exercise-pass__duration-list {
   width: max-content;
-  margin: 0;
   padding: 0;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  //border-bottom: 2px solid rgba(120, 120, 120, 0.2);
   box-shadow: 0 2px 0 0 rgba(120, 120, 120, 0.2);
   position: relative;
   z-index: 5;
-  //new
-  flex-wrap: wrap;
 }
 
 .exercise-pass__duration-item {
@@ -88,7 +76,6 @@
 
 .exercise-pass__duration-item--active button {
   color: $color-sapphire;
-  //border-bottom: 2px solid $color-crimson;
 }
 
 .exercise-pass__duration-item button:hover {
@@ -187,8 +174,5 @@
 
   .exercise-pass::after {
     display: none;
-    }
+  }
 }
-
-
-

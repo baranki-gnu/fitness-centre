@@ -21,10 +21,6 @@
   stroke: $color-resolution-blue;
 }
 
-//.slider-button[aria-disabled="true"] svg {
-//  stroke: $color-ghost-white;
-//}
-
 @media (max-width: ($vp-768 - 1px)) {
   .slider-button,
   .slider-button svg {

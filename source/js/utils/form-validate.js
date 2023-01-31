@@ -48,7 +48,6 @@ function validateName(formBlock) {
         input.classList.remove('valid');
         input.classList.remove('invalid');
       }
-
     });
   }
 }
