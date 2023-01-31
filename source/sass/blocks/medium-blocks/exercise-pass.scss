@@ -60,6 +60,7 @@
   padding: 0;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   //border-bottom: 2px solid rgba(120, 120, 120, 0.2);
   box-shadow: 0 2px 0 0 rgba(120, 120, 120, 0.2);
@@ -102,6 +103,10 @@
   margin-right: 36px;
 }
 
+.exercise-pass__duration-wrap--nojs {
+  display: none;
+}
+
 @media (max-width: ($vp-1200 - 1px)) {
   .exercise-pass {
     padding-bottom: 0;
@@ -127,7 +132,7 @@
 
   .exercise-pass__wrap {
     padding-top: 100px;
-    padding-bottom: 42px;
+    padding-bottom: 87px;
   }
 
   .exercise-pass__duration-wrap {

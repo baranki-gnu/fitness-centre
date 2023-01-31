@@ -3,6 +3,7 @@ let videoBlock = document.querySelector('[data-video]');
 function onPageLoad() {
   if (videoBlock) {
     videoBlock.classList.remove('gym__video-nojs');
+    videoBlock.addEventListener('click', onVideoClick);
   }
 }
 
@@ -24,7 +25,5 @@ function onVideoClick() {
 }
 
 onPageLoad();
-
-videoBlock.addEventListener('click', onVideoClick);
 
 export {onPageLoad, onVideoClick};

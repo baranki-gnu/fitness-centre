@@ -1,4 +1,33 @@
+function removeNoJs() {
+  let durationButtons = document.querySelector('[data-tabs-duration-wrap]');
+  if (durationButtons) {
+    durationButtons.classList.remove('exercise-pass__duration-wrap--nojs');
+  }
+
+  let tabsList = document.querySelector('[data-tabs-content]');
+  if (tabsList) {
+    tabsList.classList.remove('tab-list--nojs');
+
+    let tabItems = tabsList.querySelectorAll('[data-tab]');
+
+    if (tabItems) {
+      tabItems.forEach((item) => {
+        item.classList.remove('tab-list__item--nojs');
+      });
+    }
+
+    let tabTips = tabsList.querySelectorAll('[data-tab-tip]');
+
+    if (tabTips) {
+      tabTips.forEach((item) => {
+        item.classList.remove('pass-types__item-info-tip--nojs');
+      });
+    }
+  }
+}
+
 function switchTab() {
+  removeNoJs();
 
   let tabsButtons = document.querySelectorAll('.exercise-pass__duration-item button');
 

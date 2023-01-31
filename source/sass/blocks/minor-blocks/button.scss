@@ -12,19 +12,15 @@
   cursor: pointer;
 }
 
-//.button:hover {
-//  color: $color-default-white;
-//  background-image: $hover-gradient;
-//  border-width: 0;
-//}
-
 .button--white {
   padding: 20px;
   color: $color-default-white;
   border: 4px solid $color-default-white;
 }
 
-.button--white:hover {
+.button--white:hover,
+.button--white:focus,
+.button--white:focus-within {
   color: $color-sapphire;
   border-color: $color-sapphire;
   background-color: $color-default-white;

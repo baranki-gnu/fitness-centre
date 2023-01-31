@@ -14,3 +14,41 @@
   display: block;
 }
 
+.tab-list--nojs {
+  flex-direction: column;
+}
+
+.tab-list__item--nojs {
+  display: block;
+}
+
+.tab-list__item--nojs:first-child {
+  margin-top: 20px;
+}
+
+@media (max-width: ($vp-1200 - 1px)) {
+  .tab-list__item--nojs {
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tab-list--nojs {
+    height: min-content;
+    flex-wrap: nowrap;
+  }
+
+  //new
+  .tab-list__item--nojs span {
+    margin-bottom: 20px;
+  }
+
+  .tab-list__item--nojs {
+    margin-bottom: 20px;
+  }
+
+  .tab-list__item--nojs .tab-list__pass-types {
+    gap: 20px;
+  }
+
+}

@@ -109,6 +109,10 @@
   color: $color-sapphire;
 }
 
+.contacts__list-item a:hover {
+  color: $color-kingfisher-daisy;
+}
+
 @media (max-width: ($vp-1200 - 1px)) {
   .contacts {
     padding-top: 62px;

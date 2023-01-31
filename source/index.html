@@ -21,7 +21,7 @@
     <header class="page__header main-header">
 
       <nav class="main-header__navigation header-navigation container">
-        <div class="header-navigation__logo-wrap logo-block">
+        <div class="header-navigation__logo-wrap logo-block logo-block--header">
           <a class="logo-block__link">
             <svg focusable="false" width="130" height="22" aria-label="Фитнес центр SUPERGYM">
               <use xlink:href="img/sprite/sprite.svg#supergym-logo"></use>
@@ -56,7 +56,7 @@
           <div class="central-sreen__inner-wrap">
             <b>омск</b>
             <h2>Фитнес центр</h2>
-            <a class="central-screen__buy-link button button--white" data-buy-pass>Купить абонемент</a>
+            <a class="central-screen__buy-link button button--white" href="#" data-buy-pass>Купить абонемент</a>
           </div>
           <div class="central-screen__image-wrap">
             <picture>
@@ -74,17 +74,14 @@
           <div class="gym__text-wrap">
             <div class="gym__inner-text-wrap">
               <h2>Тренажерный зал</h2>
-              <b>Просторный зал площадью 900 кв/м</b>
+              <b>Просторный зал площадью 900&nbsp;кв/м</b>
               <p>
-                Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
-                Тренажерный зал
-                оснащен всем необходимым современным оборудованием для всех спортсменов.
+                Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления
+                тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
               </p>
               <p>
-                В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре
-                есть
-                несколько
-                оборудованных залов для различных видов групповых занятий.
+                В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также
+                в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
               </p>
             </div>
           </div>
@@ -108,18 +105,19 @@
             <div class="gym__video-wrap">
               <div class="gym__video-cover" data-video-cover>
                 <picture>
-                <source media="(max-width: 767px)"
-                  srcset="img/content/video-picture-mobile@1x.webp 1x, img/content/video-picture-mobile@2x.webp 2x"
-                  type="image/webp">
-                <source
-                  srcset="img/content/video-picture-desktop@2x.webp 1x, img/content/video-picture-desktop@2x.webp 2x"
-                  type="image/webp">
-                <img src="img/content/map-desktop@1x.jpg"
-                  srcset="img/content/video-picture-desktop@1x.jpg 1x, img/content/video-picture-desktop@2x.jpg 2x"
-                  width="364" height="228" loading="lazy" alt="г. Санкт Петербург, ул. Большая Конюшенная, 19/8.">
-              </picture>
+                  <source media="(max-width: 767px)"
+                    srcset="img/content/video-picture-mobile@1x.webp 1x, img/content/video-picture-mobile@2x.webp 2x"
+                    type="image/webp">
+                  <source
+                    srcset="img/content/video-picture-desktop@2x.webp 1x, img/content/video-picture-desktop@2x.webp 2x"
+                    type="image/webp">
+                  <img src="img/content/map-desktop@1x.jpg"
+                    srcset="img/content/video-picture-desktop@1x.jpg 1x, img/content/video-picture-desktop@2x.jpg 2x"
+                    width="364" height="228" loading="lazy" alt="г. Санкт Петербург, ул. Большая Конюшенная, 19/8.">
+                </picture>
               </div>
-              <iframe src="https://www.youtube.com/embed/9TZXsZItgdw" width="364" height="228" frameborder="0" data-iframe> </iframe>
+              <iframe src="https://www.youtube.com/embed/9TZXsZItgdw" width="364" height="228" frameborder="0"
+                data-iframe> </iframe>
             </div>
             <button class="gym__video-play" type="button" data-play-button>
               <svg width="73" height="73" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -147,33 +145,33 @@
       <section class="main-content__exercise-pass exercise-pass" data-exercise-pass>
         <div class="exercise-pass__wrap container">
           <h2 class="title">Абонементы</h2>
-          <div class="exercise-pass__duration-wrap">
+          <div class="exercise-pass__duration-wrap exercise-pass__duration-wrap--nojs" data-tabs-duration-wrap><!--Убрать nojs-->
             <ul class="exercise-pass__duration-list" data-tabs-buttons>
               <li class="exercise-pass__duration-item exercise-pass__duration-item--active">
-                <button type="button" data-duration="1 месяц">1 месяц</button>
+                <button type="button" data-duration="1 месяц">1&nbsp;месяц</button>
               </li>
               <li class="exercise-pass__duration-item">
-                <button type="button" data-duration="6 месяцев">6 месяцев</button>
+                <button type="button" data-duration="6 месяцев">6&nbsp;месяцев</button>
               </li>
               <li class="exercise-pass__duration-item">
-                <button type="button" data-duration="12 месяцев">12 месяцев</button>
+                <button type="button" data-duration="12 месяцев">12&nbsp;месяцев</button>
               </li>
             </ul>
           </div>
           <div class="exercise-pass__tabs-container">
 
-            <ul class="exercise-pass__tab-list tab-list" data-tabs-content>
+            <ul class="exercise-pass__tab-list tab-list tab-list--nojs" data-tabs-content><!--Убрать nojs-->
               <!--First Tab-->
-              <li class="tab-list__item tab-list__item--current pass-types" data-tab="1 месяц">
+              <li class="tab-list__item tab-list__item--current tab-list__item--nojs pass-types" data-tab="1 месяц"><!--Убрать nojs-->
 
                 <ul class="tab-list__pass-types pass-types__list">
                   <!--With a coach-->
                   <li class="pass-types__item">
 
                     <div class="pass-types__item-inner-wrap">
-                      <span class="pass-types__item-info-tip">1 месяц</span>
-                      <h4>С тренером</h4>
-                      <span>12 занятий</span>
+                      <span class="pass-types__item-info-tip pass-types__item-info-tip--nojs" data-tab-tip>1&nbsp;месяц</span><!--Убрать nojs-->
+                      <h4>С&nbsp;тренером</h4>
+                      <span>12&nbsp;занятий</span>
                       <div class="pass-types__price-wrap">
                         <span aria-hidden="true">5000</span>
                         <b>5000</b>
@@ -181,7 +179,9 @@
                           <use xlink:href="img/sprite/sprite.svg#ruble"></use>
                         </svg>
                       </div>
-                      <a class="pass-types__link button" href="#">купить абонемент</a>
+                      <div class="pass-types__link-wrap">
+                        <a class="pass-types__link button" href="#">купить абонемент</a>
+                      </div>
                     </div>
 
                   </li>
@@ -189,9 +189,9 @@
                   <li class="pass-types__item pass-types__item--active">
 
                     <div class="pass-types__item-inner-wrap">
-                      <span class="pass-types__item-info-tip">1 месяц</span>
+                      <span class="pass-types__item-info-tip pass-types__item-info-tip--nojs" data-tab-tip>1&nbsp;месяц</span><!--Убрать nojs-->
                       <h4>Дневной</h4>
-                      <span>с 8:00 до 17:00</span>
+                      <span>с&nbsp;8:00 до&nbsp;17:00</span>
                       <div class="pass-types__price-wrap">
                         <span aria-hidden="true">1700</span>
                         <b>1700</b>
@@ -199,7 +199,9 @@
                           <use xlink:href="img/sprite/sprite.svg#ruble"></use>
                         </svg>
                       </div>
-                      <a class="pass-types__link button" href="#">купить абонемент</a>
+                      <div class="pass-types__link-wrap">
+                        <a class="pass-types__link button" href="#">купить абонемент</a>
+                      </div>
                     </div>
 
                   </li>
@@ -207,9 +209,9 @@
                   <li class="pass-types__item">
 
                     <div class="pass-types__item-inner-wrap">
-                      <span class="pass-types__item-info-tip">1 месяц</span>
+                      <span class="pass-types__item-info-tip pass-types__item-info-tip--nojs" data-tab-tip>1&nbsp;месяц</span>
                       <h4>Полный день</h4>
-                      <span>с 8:00 до 22:00</span>
+                      <span>с&nbsp;8:00 до&nbsp;22:00</span>
                       <div class="pass-types__price-wrap">
                         <span aria-hidden="true">2700</span>
                         <b>2700</b>
@@ -217,22 +219,24 @@
                           <use xlink:href="img/sprite/sprite.svg#ruble"></use>
                         </svg>
                       </div>
-                      <a class="pass-types__link button" href="#">купить абонемент</a>
+                      <div class="pass-types__link-wrap">
+                        <a class="pass-types__link button" href="#">купить абонемент</a>
+                      </div>
                     </div>
 
                   </li>
                 </ul>
               </li>
               <!--Second Tab-->
-              <li class="tab-list__item" data-tab="6 месяцев">
+              <li class="tab-list__item tab-list__item--nojs" data-tab="6 месяцев">
 
                 <ul class="tab-list__pass-types pass-types__list">
                   <!--With a coach-->
                   <li class="pass-types__item">
                     <div class="pass-types__item-inner-wrap">
-                      <span class="pass-types__item-info-tip">6 месяцев</span>
-                      <h4>С тренером</h4>
-                      <span>72 занятия</span>
+                      <span class="pass-types__item-info-tip pass-types__item-info-tip--nojs" data-tab-tip>6&nbsp;месяцев</span>
+                      <h4>С&nbsp;тренером</h4>
+                      <span>72&nbsp;занятия</span>
                       <div class="pass-types__price-wrap">
                         <span aria-hidden="true">25000</span>
                         <b>25000</b>
@@ -240,15 +244,17 @@
                           <use xlink:href="img/sprite/sprite.svg#ruble"></use>
                         </svg>
                       </div>
-                      <a class="pass-types__link button" href="#">купить абонемент</a>
+                      <div class="pass-types__link-wrap">
+                        <a class="pass-types__link button" href="#">купить абонемент</a>
+                      </div>
                     </div>
                   </li>
                   <!--Daytime-->
                   <li class="pass-types__item pass-types__item--active">
                     <div class="pass-types__item-inner-wrap">
-                      <span class="pass-types__item-info-tip">6 месяцев</span>
+                      <span class="pass-types__item-info-tip pass-types__item-info-tip--nojs" data-tab-tip>6&nbsp;месяцев</span>
                       <h4>Дневной</h4>
-                      <span>с 8:00 до 17:00</span>
+                      <span>с&nbsp;8:00 до&nbsp;17:00</span>
                       <div class="pass-types__price-wrap">
                         <span aria-hidden="true">8700</span>
                         <b>8700</b>
@@ -256,15 +262,17 @@
                           <use xlink:href="img/sprite/sprite.svg#ruble"></use>
                         </svg>
                       </div>
-                      <a class="pass-types__link button" href="#">купить абонемент</a>
+                      <div class="pass-types__link-wrap">
+                        <a class="pass-types__link button" href="#">купить абонемент</a>
+                      </div>
                     </div>
                   </li>
                   <!--Full Day-->
                   <li class="pass-types__item">
                     <div class="pass-types__item-inner-wrap">
-                      <span class="pass-types__item-info-tip">6 месяцев</span>
+                      <span class="pass-types__item-info-tip pass-types__item-info-tip--nojs" data-tab-tip>6&nbsp;месяцев</span>
                       <h4>Полный день</h4>
-                      <span>с 8:00 до 22:00</span>
+                      <span>с&nbsp;8:00 до&nbsp;22:00</span>
                       <div class="pass-types__price-wrap">
                         <span aria-hidden="true">11700</span>
                         <b>11700</b>
@@ -272,20 +280,22 @@
                           <use xlink:href="img/sprite/sprite.svg#ruble"></use>
                         </svg>
                       </div>
-                      <a class="pass-types__link button" href="#">купить абонемент</a>
+                      <div class="pass-types__link-wrap">
+                        <a class="pass-types__link button" href="#">купить абонемент</a>
+                      </div>
                     </div>
                   </li>
                 </ul>
               </li>
               <!--Third Tab-->
-              <li class="tab-list__item" data-tab="12 месяцев">
+              <li class="tab-list__item tab-list__item--nojs" data-tab="12 месяцев">
 
                 <ul class="tab-list__pass-types pass-types__list">
                   <!--With a coach-->
                   <li class="pass-types__item">
                     <div class="pass-types__item-inner-wrap">
-                      <span class="pass-types__item-info-tip">12 месяцев</span>
-                      <h4>С тренером</h4>
+                      <span class="pass-types__item-info-tip pass-types__item-info-tip--nojs" data-tab-tip>12&nbsp;месяцев</span>
+                      <h4>С&nbsp;тренером</h4>
                       <span>144 занятия</span>
                       <div class="pass-types__price-wrap">
                         <span aria-hidden="true">47000</span>
@@ -294,15 +304,17 @@
                           <use xlink:href="img/sprite/sprite.svg#ruble"></use>
                         </svg>
                       </div>
-                      <a class="pass-types__link button" href="#">купить абонемент</a>
+                      <div class="pass-types__link-wrap">
+                        <a class="pass-types__link button" href="#">купить абонемент</a>
+                      </div>
                     </div>
                   </li>
                   <!--Daytime-->
                   <li class="pass-types__item pass-types__item--active">
                     <div class="pass-types__item-inner-wrap">
-                      <span class="pass-types__item-info-tip">12 месяцев</span>
+                      <span class="pass-types__item-info-tip pass-types__item-info-tip--nojs" data-tab-tip>12&nbsp;месяцев</span>
                       <h4>Дневной</h4>
-                      <span>с 8:00 до 17:00</span>
+                      <span>с&nbsp;8:00 до&nbsp;17:00</span>
                       <div class="pass-types__price-wrap">
                         <span aria-hidden="true">15000</span>
                         <b>15000</b>
@@ -310,15 +322,17 @@
                           <use xlink:href="img/sprite/sprite.svg#ruble"></use>
                         </svg>
                       </div>
-                      <a class="pass-types__link button" href="#">купить абонемент</a>
+                      <div class="pass-types__link-wrap">
+                        <a class="pass-types__link button" href="#">купить абонемент</a>
+                      </div>
                     </div>
                   </li>
                   <!--Full Day-->
                   <li class="pass-types__item">
                     <div class="pass-types__item-inner-wrap">
-                      <span class="pass-types__item-info-tip">12 месяцев</span>
+                      <span class="pass-types__item-info-tip pass-types__item-info-tip--nojs" data-tab-tip>12&nbsp;месяцев</span>
                       <h4>Полный день</h4>
-                      <span>с 8:00 до 22:00</span>
+                      <span>с&nbsp;8:00 до&nbsp;22:00</span>
                       <div class="pass-types__price-wrap">
                         <span aria-hidden="true">20400</span>
                         <b>20400</b>
@@ -326,7 +340,9 @@
                           <use xlink:href="img/sprite/sprite.svg#ruble"></use>
                         </svg>
                       </div>
-                      <a class="pass-types__link button" href="#">купить абонемент</a>
+                      <div class="pass-types__link-wrap">
+                        <a class="pass-types__link button" href="#">купить абонемент</a>
+                      </div>
                     </div>
                   </li>
                 </ul>
@@ -341,9 +357,9 @@
         <div class="crossfit-competition__wrap container">
           <div class="crossfit-competition__info-wrap">
             <div class="crossfit-competition__info-innerwrap">
-              <h2 class="visually-hidden">SUPER GAMES - соревнования по CrossFit</h2>
+              <h2 class="visually-hidden">SUPER GAMES&nbsp;&mdash; соревнования по&nbsp;CrossFit</h2>
               <h3 class="crossfit-competition__title title">SUPER GAMES</h3>
-              <p>Ежегодные соревнования по CrossFit</p>
+              <p>Ежегодные соревнования по&nbsp;CrossFit</p>
               <dl class="crossfit-competition__info">
                 <dt>Дата</dt>
                 <dd>
@@ -374,7 +390,7 @@
         </div>
 
         <div class="coaches__arrows-slider-container">
-          <div class="swiper swiper1 coaches__outer-wrap">
+          <div class="swiper coach-slider coaches__outer-wrap">
             <div class="swiper-wrapper coaches__wrap container container--coaches">
               <div class="swiper-slide coaches__personal-card coach-card">
                 <picture>
@@ -384,13 +400,15 @@
                     srcset="img/content/coach-1-desktop@1x.jpg 1x, img/content/coach-1-desktop@2x.jpg 2x" width="260"
                     height="294" loading="lazy" alt="Фотография тренажерного зала SUPRERGYM.">
                 </picture>
-                <h3 class="coach-card__title">Анна Павлова</h3>
-                <span>Степ-аэробика</span>
-                <ul class="coach-card__expertise-list">
+                <div class="coach-card__inner-wrap">
+                  <h3 class="coach-card__title">Анна Павлова</h3>
+                  <span>Степ-аэробика</span>
+                  <ul class="coach-card__expertise-list">
                   <li class="coach-card__expertise-item">Certified Level&nbsp;5 Trainer</li>
                   <li class="coach-card__expertise-item">Победитель региональных соревнований</li>
                   <li class="coach-card__expertise-item">Опыт&nbsp;&mdash; 3&nbsp;года</li>
-                </ul>
+                  </ul>
+                </div>
               </div>
               <div class="swiper-slide coaches__personal-card coach-card">
                 <picture>
@@ -400,15 +418,17 @@
                     srcset="img/content/coach-2-desktop@1x.jpg 1x, img/content/coach-2-desktop@2x.jpg 2x" width="260"
                     height="294" loading="lazy" alt="Фотография тренажерного зала SUPRERGYM.">
                 </picture>
-                <h3 class="coach-card__title">Алексей Лавров</h3>
+                <div class="coach-card__inner-wrap">
+                  <h3 class="coach-card__title">Алексей Лавров</h3>
                 <span>BodyPump</span>
                 <ul class="coach-card__expertise-list">
                   <li class="coach-card__expertise-item">Certified Level&nbsp;4 Trainer</li>
                   <li class="coach-card__expertise-item">Победитель соревнований среди штангистов в&nbsp;г. Омск</li>
                   <li class="coach-card__expertise-item">Опыт&nbsp;&mdash; 5&nbsp;лет</li>
                 </ul>
+                </div>
               </div>
-              <div class="swiper-slide coaches__personal-card coach-card coach-card--check">
+              <div class="swiper-slide coaches__personal-card coach-card">
                 <picture>
                   <source srcset="img/content/coach-3-desktop@1x.webp 1x, img/content/coach-3-desktop@2x.webp 2x"
                     type="image/webp">
@@ -416,13 +436,15 @@
                     srcset="img/content/coach-3-desktop@1x.jpg 1x, img/content/coach-3-desktop@2x.jpg 2x" width="260"
                     height="294" loading="lazy" alt="Фотография тренажерного зала SUPRERGYM.">
                 </picture>
-                <h3 class="coach-card__title">Александр Пашков</h3>
+                <div class="coach-card__inner-wrap">
+                  <h3 class="coach-card__title">Александр Пашков</h3>
                 <span>CrossFit</span>
                 <ul class="coach-card__expertise-list">
                   <li class="coach-card__expertise-item">Certified Level&nbsp;3 Trainer</li>
                   <li class="coach-card__expertise-item">Победитель чемпионата России по&nbsp;CrossFit</li>
                   <li class="coach-card__expertise-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                 </ul>
+                </div>
               </div>
               <div class="swiper-slide coaches__personal-card coach-card">
                 <picture>
@@ -432,13 +454,15 @@
                     srcset="img/content/coach-4-desktop@1x.jpg 1x, img/content/coach-4-desktop@2x.jpg 2x" width="260"
                     height="294" loading="lazy" alt="Фотография тренажерного зала SUPRERGYM.">
                 </picture>
-                <h3 class="coach-card__title">Мария Кетова</h3>
+                <div class="coach-card__inner-wrap">
+                  <h3 class="coach-card__title">Мария Кетова</h3>
                 <span>Cycling</span>
                 <ul class="coach-card__expertise-list">
                   <li class="coach-card__expertise-item">Certified Level&nbsp;2 Trainer</li>
                   <li class="coach-card__expertise-item">Победитель региональных соревнований по&nbsp;Cycling</li>
                   <li class="coach-card__expertise-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                 </ul>
+                </div>
               </div>
               <div class="swiper-slide coaches__personal-card coach-card">
                 <picture>
@@ -448,13 +472,15 @@
                     srcset="img/content/coach-1-desktop@1x.jpg 1x, img/content/coach-1-desktop@2x.jpg 2x" width="260"
                     height="294" loading="lazy" alt="Фотография тренажерного зала SUPRERGYM.">
                 </picture>
-                <h3 class="coach-card__title">Екатерина Трицепцова</h3>
+                <div class="coach-card__inner-wrap">
+                  <h3 class="coach-card__title">Екатерина Трицепцова</h3>
                 <span>TRX</span>
                 <ul class="coach-card__expertise-list">
                   <li class="coach-card__expertise-item">Certified Level&nbsp;6 Trainer</li>
                   <li class="coach-card__expertise-item">Победитель региональных соревнований</li>
                   <li class="coach-card__expertise-item">Опыт&nbsp;&mdash; 2&nbsp;года</li>
                 </ul>
+                </div>
               </div>
               <div class="swiper-slide coaches__personal-card coach-card">
                 <picture>
@@ -464,13 +490,15 @@
                     srcset="img/content/coach-2-desktop@1x.jpg 1x, img/content/coach-2-desktop@2x.jpg 2x" width="260"
                     height="294" loading="lazy" alt="Фотография тренажерного зала SUPRERGYM.">
                 </picture>
-                <h3 class="coach-card__title">Дайске Ногами</h3>
+                <div class="coach-card__inner-wrap">
+                  <h3 class="coach-card__title">Дайске Ногами</h3>
                 <span>BodyCombat</span>
                 <ul class="coach-card__expertise-list">
                   <li class="coach-card__expertise-item">2&nbsp;Дан каратэ</li>
-                  <li class="coach-card__expertise-item">Победитель соревнований России по&nbsp;карате</li>
+                  <li class="coach-card__expertise-item">Победитель соревнований России по&nbsp;каратэ</li>
                   <li class="coach-card__expertise-item">Опыт&nbsp;&mdash; 11&nbsp;лет</li>
                 </ul>
+                </div>
               </div>
               <div class="swiper-slide coaches__personal-card coach-card">
                 <picture>
@@ -480,13 +508,15 @@
                     srcset="img/content/coach-3-desktop@1x.jpg 1x, img/content/coach-3-desktop@2x.jpg 2x" width="260"
                     height="294" loading="lazy" alt="Фотография тренажерного зала SUPRERGYM.">
                 </picture>
-                <h3 class="coach-card__title">Сергей Бицепсов</h3>
+                <div class="coach-card__inner-wrap">
+                  <h3 class="coach-card__title">Сергей Бицепсов</h3>
                 <span>Функциональные тренировки</span>
                 <ul class="coach-card__expertise-list">
                   <li class="coach-card__expertise-item">Certified Level&nbsp;4 Trainer</li>
                   <li class="coach-card__expertise-item">КМС по&nbsp;триатлону</li>
                   <li class="coach-card__expertise-item">Опыт&nbsp;&mdash; 9&nbsp;лет</li>
                 </ul>
+                </div>
               </div>
               <div class="swiper-slide coaches__personal-card coach-card">
                 <picture>
@@ -496,7 +526,8 @@
                     srcset="img/content/coach-4-desktop@1x.jpg 1x, img/content/coach-4-desktop@2x.jpg 2x" width="260"
                     height="294" loading="lazy" alt="Фотография тренажерного зала SUPRERGYM.">
                 </picture>
-                <h3 class="coach-card__title">Ольга Прессова</h3>
+                <div class="coach-card__inner-wrap">
+                  <h3 class="coach-card__title">Ольга Прессова</h3>
                 <span>ABS</span>
                 <ul class="coach-card__expertise-list">
                   <li class="coach-card__expertise-item">Certified Level&nbsp;5 Trainer</li>
@@ -505,6 +536,7 @@
                     пресса"</li>
                   <li class="coach-card__expertise-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
                 </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -637,9 +669,9 @@
                 <use xlink:href="img/sprite/sprite.svg#arrow"></use>
               </svg>
             </div>
-            <div class="swiper swiper2 reviews__container">
-              <div class="swiper-wrapper reviews__inner-container">
-                <div class="swiper-slide reviews__item reviews__item--active">
+            <div class="swiper review-slider reviews__container">
+              <div class="swiper-wrapper reviews__inner-container reviews__inner-container--nojs" data-reviews-container>
+                <div class="swiper-slide reviews__item">
                   <div class="reviews__item-wrap">
                     <picture>
                       <source srcset="img/content/review-photo@1x.webp 1x, img/content/review-photo@2x.webp 2x"
@@ -650,12 +682,13 @@
                     </picture>
                     <h3>Анна Орлова</h3>
                     <blockquote>
-                      «Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют,
+                      «Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
+                      обновляют,
                       персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей»
                     </blockquote>
                   </div>
                 </div>
-                <div class="swiper-slide reviews__item .reviews__item--active">
+                <div class="swiper-slide reviews__item">
                   <div class="reviews__item-wrap">
                     <picture>
                       <source srcset="img/content/review-photo-2@1x.webp 1x, img/content/review-photo-2@2x.webp 2x"
@@ -666,9 +699,10 @@
                     </picture>
                     <h3>Эразм Козодоев</h3>
                     <blockquote>
-                      «Уже год хожу на карате и CrossFit-а. Тренеры четкие, все по делу. Увеличил бицепсы и ловкость рук,
+                      «Уже год хожу на&nbsp;карате и&nbsp;CrossFit. Тренеры четкие, все по&nbsp;делу. Увеличил бицепсы
+                      и&nbsp;ловкость рук,
                       ног
-                      и ушей»
+                      и&nbsp;ушей»
                     </blockquote>
                   </div>
                 </div>

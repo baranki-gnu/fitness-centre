@@ -198,14 +198,16 @@
   }
 
   .promos__best-deal-text-wrap {
-    width: 67.74%;
+    width: 76%;
+    max-width: 76%;
     min-width: 190px;
     display: flex;
     flex-direction: column;
   }
 
   .promos__best-deal-link-wrap {
-    width: 67.74%;
+    width: 76%;
+    max-width: 76%;
     min-width: 190px;
     margin: 0 auto 30px auto;
     //justify-self: start;
@@ -310,9 +312,10 @@
 
     .promos__best-deal-wrap img,
 .promos__best-deal-wrap picture {
-  aspect-ratio: 1.02;
+  aspect-ratio: 0.99;
   object-fit: cover;
-  object-position: -10px -10px;
+  //object-position: -10px -10px;
+  object-position: 0 -8px;
 }
 
 .promos__best-deal-link-wrap {
@@ -322,8 +325,6 @@
 .promos__extra-deal a {
   margin-bottom: 16px;
 }
-
-
 
 }
 

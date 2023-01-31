@@ -207,6 +207,10 @@
 }
 
 @media (max-width: ($vp-768 - 1px)) {
+  .central-screen {
+    background-position: 10% 65%;
+    background-size: 400%;
+  }
   .central-screen__wrap {
     width: 100%;
     min-width: 320px;

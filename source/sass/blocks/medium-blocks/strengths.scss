@@ -354,6 +354,11 @@
     padding-right: 40px;
   }
 
+  .strengths__item {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .strengths__item .strengths__item-first-column {
     width: min-content;
     margin-left: auto;
@@ -425,6 +430,13 @@
   .strengths__item .strengths__item-first-column {
     //margin-top: auto;
     margin-bottom: 10px;
+  }
+
+  .strengths__item:nth-child(2n),
+  .strengths__item:nth-child(4n+1) {
+    margin-left: auto;
+    margin-right: auto;
+
   }
 
 .strengths__item:nth-child(4n) .strengths__item-second-column,

@@ -3,7 +3,8 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 40px;
+  justify-content: flex-start;
   list-style-type: none;
   position: relative;
   z-index: 5;
@@ -20,9 +21,9 @@
   background-color: $color-default-white;
 }
 
-.pass-types__item:not(:last-child) {
-  margin-right: 20px;
-}
+//.pass-types__item:not(:last-child) {
+//  margin-right: 20px;
+//}
 
 .pass-types__item-inner-wrap {
   width: 100%;
@@ -110,11 +111,17 @@
   border-width: 0;
 }
 
-.pass-types__item a:hover,
-.pass-types__item--active a:hover {
+.pass-types__item a:hover {
+  padding: 26px;
   color: $color-default-white;
   background-image: $hover-gradient;
   border-width: 0;
+}
+
+.pass-types__item--active a:hover {
+  color: $color-default-white;
+  background-image: $hover-gradient;
+  padding: 24px;
 }
 
 .pass-types__item--active .pass-types__item-inner-wrap {
@@ -137,6 +144,11 @@
   display: none;
 }
 
+.pass-types__item .pass-types__item-info-tip--nojs {
+  margin-bottom: 20px;
+  display: block;
+}
+
 @media (max-width: ($vp-1200 - 1px)) {
   .pass-types__list {
     width: 65.19%;
@@ -148,12 +160,18 @@
     width: 100%;
     max-width: 100%;
     margin-right: 0;
-    margin-bottom: 42px;
+    margin-bottom: 0;
     aspect-ratio: 0.99;
   }
 
   .pass-types__item-inner-wrap {
     padding-top: 62px;
+    //new
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    //new
   }
 
   .pass-types__item--active .pass-types__item-inner-wrap {
@@ -223,5 +241,17 @@
     padding-top: 44px;
     padding-bottom: 48px;
   }
+
+  .pass-types__link-wrap {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .pass-types__item a,
+  .pass-types__item--active a {
+    width: 100%;
+    max-width: 100%;
+  }
+
 
 }

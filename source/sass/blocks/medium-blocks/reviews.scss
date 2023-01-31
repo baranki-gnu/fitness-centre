@@ -1,5 +1,5 @@
 .reviews {
-  padding-bottom: 120px;
+  padding-bottom: 90px;
 }
 
 .reviews h2 {
@@ -23,14 +23,14 @@
 }
 
 .reviews__prev-button {
-  top: 50%;
+  top: calc(50% - 16px);
   left: 0;
   transform: translateY(-50%);
   position: absolute;
 }
 
 .reviews__next-button {
-  top: 50%;
+  top: calc(50% - 16px);
   right: 0;
   transform: translateY(-50%);
   position: absolute;
@@ -54,15 +54,11 @@
 }
 
 .reviews__item {
-  display: block;
-  flex-shrink: 0;
-}
-
-.reviews__item--active {
-  display: block;
   width: 100%;
   margin-bottom: 30px;
   padding: 56px 30px;
+  display: block;
+  flex-shrink: 0;
   color: $color-default-white;
   background-color: $color-resolution-blue;
   box-shadow: 0 0 40 0 rgba(28, 51, 116, 0.2);
@@ -118,13 +114,18 @@
   grid-row: 2/3;
 }
 
+.reviews__inner-container--nojs {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: ($vp-1200 - 1px)) {
   .reviews {
-    padding-bottom: 85px;
+    padding-bottom: 71px;
   }
   .reviews h2 {
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 41px;
     padding-right: 3px;
     font-size: 42px;
     line-height: 50.4px;
@@ -135,7 +136,7 @@
     max-width: 100%;
   }
 
-  .reviews__item--active {
+  .reviews__item {
     padding: 56px 62px;
   }
 
@@ -195,9 +196,10 @@
 }
 
 .reviews__item h3 {
-  margin-top: 9px;
+  margin-top: auto;
+  margin-bottom: auto;
   margin-left: 4px;
-  //margin-bottom: 17px;
+  padding-top: 5px;
   align-self: flex-start;
   line-height: 26px;
 }

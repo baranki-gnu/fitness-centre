@@ -2,6 +2,7 @@
   max-width: 1216px;
   display: flex;
   justify-content: space-between;
+  z-index: 10;
 }
 
 .header-navigation a {
@@ -10,10 +11,12 @@
   line-height: 31.2px;
   letter-spacing: 0.03em;
   text-decoration: none;
+  cursor: pointer;
 }
 
-.header-navigation__logo-wrap {
-  padding-top: 10px;
+.header-navigation a:hover,
+.header-navigation__phone:hover {
+  color: $color-kingfisher-daisy;
 }
 
 @media (max-width: ($vp-1200 - 1px)) {

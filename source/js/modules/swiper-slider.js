@@ -1,6 +1,6 @@
 import Swiper from '../vendor/swiper';
 
-const swiper = new Swiper('.swiper1', {
+const coachSlider = new Swiper('.coach-slider', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -16,6 +16,7 @@ const swiper = new Swiper('.swiper1', {
       slidesPerView: 1,
       spaceBetween: 20,
       slidesPerGroup: 1,
+      initialSlide: 2,
     },
 
     768: {
@@ -23,6 +24,7 @@ const swiper = new Swiper('.swiper1', {
       spaceBetween: 30,
       slidesPerGroup: 2,
       slidesOffsetBefore: -44,
+      initialSlide: 2,
     },
 
     1200: {
@@ -40,9 +42,10 @@ const swiper = new Swiper('.swiper1', {
   },
 });
 
-const swiper2 = new Swiper('.swiper2', {
+const reviewSlider = new Swiper('.review-slider', {
   // Optional parameters
   slidesPerView: 1,
+
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
@@ -50,4 +53,4 @@ const swiper2 = new Swiper('.swiper2', {
   },
 });
 
-export {swiper, swiper2};
+export {coachSlider, reviewSlider};
