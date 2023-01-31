@@ -44,8 +44,8 @@ $hover-gradient:                    linear-gradient(135deg, $color-kingfisher-da
 // Typography
 // ---------------------------------
 
-$family-alumni: "Alumni Sans", sans-serif, "Arial";
-$family-roboto: "Roboto Condensed", sans-serif, "Arial";
+$family-alumni: "Alumni Sans", "Arial", sans-serif;
+$family-roboto: "Roboto Condensed","Arial", sans-serif;
 
 // переменная используемая в html для подключения скейлинга
 $fz-default:                        16px;

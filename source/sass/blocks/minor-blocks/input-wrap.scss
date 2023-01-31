@@ -23,7 +23,7 @@
 }
 
 .input-wrap input:hover {
-  border-bottom: 2px solid $color-whisper;
+  border-bottom: 1px solid $color-whisper;
 }
 
 .input-wrap input:focus-visible {
@@ -33,9 +33,9 @@
 .input-wrap input.valid,
 .input-wrap input.valid:hover,
 .input-wrap input.valid:active {
-  border-bottom: 2px solid $color-cobalt;
+  border-bottom: 1px solid $color-cobalt;
 }
 
 .input-wrap input.invalid {
-  border-bottom: 2px solid $color-torch-red;
+  border-bottom: 1px solid $color-torch-red;
 }

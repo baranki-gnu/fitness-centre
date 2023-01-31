@@ -189,6 +189,11 @@
     padding-bottom: 25px;
   }
 
+  .pass-types__item--active a:hover {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
   .pass-types__item:not(:last-child) {
     margin-right: 0;
   }

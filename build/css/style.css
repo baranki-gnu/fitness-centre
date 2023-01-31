@@ -802,7 +802,7 @@ button,
 
 .page body {
   height: 100%;
-  font-family: "Roboto Condensed", sans-serif, "Arial";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #102654;
@@ -831,7 +831,7 @@ button,
   top: 0;
   left: 0;
   color: #ffffff;
-  font-family: "Alumni Sans", sans-serif, "Arial";
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 26px;
   font-weight: 600;
   line-height: 31.2px;
@@ -860,6 +860,12 @@ button,
   letter-spacing: 0.03em;
   text-decoration: none;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
 }
 
 .header-navigation a:hover,
@@ -927,7 +933,7 @@ button,
 
 .footer-navigation__item a {
   margin-left: 10px;
-  font-family: "Roboto Condensed", sans-serif, "Arial";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16.41px;
@@ -1016,7 +1022,7 @@ button,
   margin-bottom: 48px;
   padding: 0;
   padding-right: 45px;
-  font-family: "Alumni Sans", sans-serif, "Arial";
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 93.5px;
   font-weight: 600;
   line-height: 110.5px;
@@ -1031,7 +1037,7 @@ button,
   margin-left: auto;
   margin-right: 0;
   padding-right: 100px;
-  font-family: "Alumni Sans", sans-serif, "Arial";
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 48px;
   font-weight: 600;
   line-height: 57.6px;
@@ -1068,7 +1074,7 @@ button,
 
 .gym {
   color: #102654;
-  font-family: "Roboto Condensed", sans-serif, "Arial";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
 }
 
 .gym__wrap {
@@ -1115,21 +1121,23 @@ button,
   margin: 0;
   padding: 0;
   display: block;
+  aspect-ratio: 1.65;
 }
 
 .gym__photo-wrap img,
 .gym__photo-wrap picture {
   width: 100%;
   max-width: 660px;
-  height: 100%;
   max-height: 401px;
+  display: block;
+  aspect-ratio: 1.65;
 }
 
 .gym h2 {
   margin: 0;
   margin-bottom: 9px;
   padding: 0;
-  font-family: "Alumni Sans", sans-serif, "Arial";
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 48px;
   font-weight: 600;
   line-height: 57.6px;
@@ -1153,24 +1161,41 @@ button,
 }
 
 .gym__video {
-  max-width: 364px;
-  right: 31.8%;
-  bottom: 118px;
+  width: 61%;
+  max-width: 723px;
+  max-height: 516px;
+  aspect-ratio: 0.71;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
   z-index: 10;
+  top: 120px;
+  right: 25px;
 }
 
 .gym__video-wrap {
-  width: 100%;
+  width: 50.35%;
+  max-width: 364px;
+  aspect-ratio: 1.6;
+  margin: auto auto 0 0;
+  position: relative;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1/2;
-  grid-template-columns: 1/2;
-  -ms-grid-rows: 1/2;
-  grid-template-rows: 1/2;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
 }
 
 .gym__video iframe {
+  display: none;
+}
+
+.gym__video iframe.active {
+  width: 100%;
+  aspect-ratio: 1.6;
+  display: block;
   border-width: 0;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -1188,6 +1213,13 @@ button,
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   z-index: 10;
+  aspect-ratio: 1.6;
+}
+
+.gym__video-cover img,
+.gym__video-cover picture {
+  width: 100%;
+  aspect-ratio: 1.6;
 }
 
 .gym__video-play {
@@ -1274,7 +1306,7 @@ button,
 .exercise-pass h2 {
   margin: 0;
   margin-bottom: 18px;
-  font-family: "Alumni Sans", sans-serif, "Arial";
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 54px;
   line-height: 64.8px;
@@ -1307,7 +1339,7 @@ button,
 
 .exercise-pass__duration-item button {
   margin-bottom: 10px;
-  font-family: "Roboto Condensed", sans-serif, "Arial";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
@@ -1401,7 +1433,7 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   aspect-ratio: 0.8;
-  font-family: "Roboto Condensed", sans-serif, "Arial";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   background-color: #ffffff;
 }
 
@@ -1561,7 +1593,7 @@ button,
   margin: 0 auto;
   margin-bottom: 55px;
   padding: 0;
-  font-family: "Alumni Sans", sans-serif, "Arial";
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 54px;
   line-height: 64.8px;
@@ -1607,7 +1639,7 @@ button,
   margin-top: auto;
   margin-bottom: 13px;
   padding: 0;
-  font-family: "Roboto Condensed", sans-serif, "Arial";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 22px;
   line-height: 20px;
@@ -1795,7 +1827,7 @@ button,
 .crossfit-competition__info-innerwrap h3 {
   margin: 0;
   margin-top: 4px;
-  font-family: "Alumni Sans", sans-serif, "Arial";
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 82px;
   line-height: 78.72px;
   letter-spacing: 0.03em;
@@ -1828,7 +1860,7 @@ button,
   margin-top: 6px;
   display: inline-block;
   vertical-align: top;
-  font-family: "Roboto Condensed", sans-serif, "Arial";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -1836,7 +1868,7 @@ button,
 
 .crossfit-competition__info-innerwrap dd,
 .crossfit-competition__info-innerwrap b {
-  font-family: "Roboto Condensed", sans-serif, "Arial";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 40px;
 }
@@ -1913,7 +1945,7 @@ button,
 .coaches__title {
   margin: 0 auto;
   padding-bottom: 48px;
-  font-family: "Alumni Sans", sans-serif, "Arial";
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 54px;
   line-height: 64.8px;
@@ -1947,6 +1979,65 @@ button,
 .coaches__button {
   width: 16px;
   height: 32px;
+}
+
+.coaches:focus-within .coaches__personal-card.swiper-slide-active h3 {
+  margin: 38px auto 0 auto;
+  position: static;
+  line-height: 22px;
+  text-align: center;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  z-index: 10;
+}
+
+.coaches:focus-within .coaches__personal-card.swiper-slide-active span {
+  margin: 0 auto 34px auto;
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  color: #b6bdcc;
+  text-align: center;
+  z-index: 10;
+}
+
+.coaches:focus-within .coaches__personal-card.swiper-slide-active ul {
+  max-width: 190px;
+  margin: 0 auto;
+  padding-left: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  list-style-type: disc;
+  z-index: 10;
+}
+
+.coaches:focus-within .coaches__personal-card.swiper-slide-active li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.coaches:focus-within .coaches__personal-card.swiper-slide-active img,
+.coaches:focus-within .coaches__personal-card.swiper-slide-active picture {
+  height: 100%;
+  width: auto;
+  aspect-ratio: 0.88;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.coaches:focus-within .coaches__personal-card.swiper-slide-active {
+  padding: 15px;
+  background-color: rgba(16, 38, 84, 0.89);
 }
 
 .coaches__button--prev {
@@ -2016,7 +2107,7 @@ button,
   width: -moz-max-content;
   width: max-content;
   max-width: 90.3%;
-  font-family: "Roboto Condensed", sans-serif, "Arial";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
@@ -2118,7 +2209,7 @@ button,
 .promos h2 {
   margin-top: 0;
   margin-bottom: 34px;
-  font-family: "Alumni Sans", sans-serif, "Arial";
+  font-family: "Alumni Sans", "Arial", sans-serif;
   text-align: center;
 }
 
@@ -2291,7 +2382,7 @@ button,
   margin-top: 9px;
   margin-bottom: 37px;
   padding-left: 4px;
-  font-family: "Alumni Sans", sans-serif, "Arial";
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
   line-height: 64.8px;
   text-align: center;
@@ -2462,7 +2553,7 @@ button,
 .trial-training h2 {
   margin-top: 0;
   margin-bottom: 15px;
-  font-family: "Alumni Sans", sans-serif, "Arial";
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 800;
   font-size: 54px;
   line-height: 84.24px;
@@ -2501,7 +2592,7 @@ button,
 .contacts h2 {
   margin-top: 0;
   margin-bottom: 37px;
-  font-family: "Alumni Sans", sans-serif, "Arial";
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 54px;
   line-height: 64.8px;
@@ -2574,7 +2665,7 @@ button,
 .contacts__list-item h3 {
   margin-top: 0;
   margin-bottom: 3px;
-  font-family: "Roboto Condensed", sans-serif, "Arial";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #102654;
@@ -2638,7 +2729,7 @@ button,
   margin-top: 0;
   margin-bottom: auto;
   padding: 18px;
-  font-family: "Roboto Condensed", sans-serif, "Arial";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 16.41px;
@@ -2686,7 +2777,7 @@ button,
 
 .button {
   padding: 27px;
-  font-family: "Roboto Condensed", sans-serif, "Arial";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 12px;
   font-weight: 700;
   line-height: 14px;
@@ -2782,7 +2873,7 @@ button,
   height: 31px;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-family: "Roboto Condensed", sans-serif, "Arial";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16.41px;
@@ -2794,7 +2885,7 @@ button,
 }
 
 .input-wrap input::-webkit-input-placeholder {
-  font-family: "Roboto Condensed", sans-serif, "Arial";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16.41px;
@@ -2802,7 +2893,7 @@ button,
 }
 
 .input-wrap input::-moz-placeholder {
-  font-family: "Roboto Condensed", sans-serif, "Arial";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16.41px;
@@ -2810,7 +2901,7 @@ button,
 }
 
 .input-wrap input:-ms-input-placeholder {
-  font-family: "Roboto Condensed", sans-serif, "Arial";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16.41px;
@@ -2818,7 +2909,7 @@ button,
 }
 
 .input-wrap input::-ms-input-placeholder {
-  font-family: "Roboto Condensed", sans-serif, "Arial";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16.41px;
@@ -2826,7 +2917,7 @@ button,
 }
 
 .input-wrap input::placeholder {
-  font-family: "Roboto Condensed", sans-serif, "Arial";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16.41px;
@@ -2834,7 +2925,7 @@ button,
 }
 
 .input-wrap input:hover {
-  border-bottom: 2px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
 }
 
 .input-wrap input:focus-visible {
@@ -2844,11 +2935,11 @@ button,
 .input-wrap input.valid,
 .input-wrap input.valid:hover,
 .input-wrap input.valid:active {
-  border-bottom: 2px solid #003eb7;
+  border-bottom: 1px solid #003eb7;
 }
 
 .input-wrap input.invalid {
-  border-bottom: 2px solid #ed0233;
+  border-bottom: 1px solid #ed0233;
 }
 
 /* @mixin hover-focus {
@@ -2908,7 +2999,7 @@ button,
   }
 
   .header-navigation a {
-    padding-top: 5px;
+    margin-top: 5px;
     font-size: 24px;
     line-height: 28.8px;
     letter-spacing: 0.02em;
@@ -3041,21 +3132,52 @@ button,
   }
 
   .gym__video {
-    width: 34.75%;
-    max-width: 384px;
+    width: 34.7%;
+    max-width: 435px;
     height: auto;
+    max-height: 273px;
     aspect-ratio: 1.59;
-    right: 15%;
-    bottom: 98px;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
+    left: 50%;
+    top: 78.5%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .gym__video-wrap {
+    width: 100%;
+    max-width: 435px;
+    margin: 0;
+    aspect-ratio: 1.59;
+  }
+
+  .gym__video-cover {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 1.59;
+  }
+
+  .gym__video-cover img,
+  .gym__video-cover picture {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    aspect-ratio: 1.59;
+  }
+
+  .gym__video iframe.active {
+    aspect-ratio: 1.59;
   }
 
   .gym__video iframe {
+    display: none;
+  }
+
+  .gym__video iframe.active {
     width: 100%;
     height: 100%;
     aspect-ratio: 1.59;
+    display: block;
   }
 
   .gym__video-play {
@@ -3067,10 +3189,7 @@ button,
     width: 100%;
     max-width: 1109px;
     max-height: 564px;
-  }
-
-  .gym p {
-    max-width: 100%;
+    aspect-ratio: 1.97;
   }
 
   .gym__photo-wrap img,
@@ -3078,6 +3197,10 @@ button,
     max-width: 100%;
     max-height: 563px;
     aspect-ratio: 1.97;
+  }
+
+  .gym p {
+    max-width: 100%;
   }
 
   .gym h2,
@@ -3209,6 +3332,11 @@ button,
   }
 
   .pass-types__item--active a {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .pass-types__item--active a:hover {
     padding-top: 25px;
     padding-bottom: 25px;
   }
@@ -3727,6 +3855,7 @@ button,
   .logo-block__link,
   .logo-block a {
     padding-top: 0;
+    margin-top: 0;
   }
 
   .logo-block__link svg {
@@ -3790,6 +3919,7 @@ button,
   }
 
   .header-navigation a {
+    margin-top: 0;
     padding-top: 0;
     font-size: 20px;
     line-height: 24px;
@@ -3974,26 +4104,30 @@ button,
   .gym__video {
     width: 100%;
     max-width: 100%;
+    max-height: 399px;
     aspect-ratio: 1.92;
     margin: 0;
-    bottom: 0;
-    right: -50%;
-    position: relative;
-  }
-
-  .gym__video a {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-transform: translate(0);
     -ms-transform: translate(0);
     transform: translate(0);
+    position: static;
   }
 
-  .gym__video img,
-  .gym__video picture {
+  .gym__video-wrap {
     width: 100%;
+    max-width: 100%;
+    max-height: 399px;
+    position: relative;
+    aspect-ratio: 1.92;
+  }
+
+  .gym__video-cover,
+  .gym__video-cover img,
+  .gym__video-cover picture {
+    width: 100%;
+    max-width: 100%;
+    max-height: 399px;
+    aspect-ratio: 1.92;
   }
 
   .gym__inner-text-wrap {

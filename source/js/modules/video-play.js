@@ -14,6 +14,7 @@ function onVideoClick() {
     let playButton = videoBlock.querySelector('[data-play-button]');
 
     if (iframeBlock && videoCover && playButton) {
+      iframeBlock.classList.add('active');
       videoCover.classList.add('gym__video-cover--hidden');
       playButton.classList.add('gym__video-play--hidden');
 
