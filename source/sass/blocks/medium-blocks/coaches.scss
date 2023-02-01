@@ -40,61 +40,6 @@
   height: 32px;
 }
 
-//new
-.coaches:focus-within .coaches__personal-card.swiper-slide-active h3 {
-  margin: 38px auto 0 auto;
-  position: static;
-  line-height: 22px;
-  text-align: center;
-  transform: none;
-  z-index: 10;
-}
-
-.coaches:focus-within .coaches__personal-card.swiper-slide-active span {
-  margin: 0 auto 34px auto;
-  display: block;
-  font-size: 16px;
-  line-height: 24px;
-  color: $color-spindle;
-  text-align: center;
-  z-index: 10;
-}
-
-.coaches:focus-within .coaches__personal-card.swiper-slide-active ul {
-  max-width: 190px;
-  margin: 0 auto;
-  padding-left: 37px;
-  display: flex;
-  flex-direction: column;
-  font-size: 14px;
-  line-height: 21px;
-  color: $color-default-white;
-  list-style-type: disc;
-  z-index: 10;
-}
-
-.coaches:focus-within .coaches__personal-card.swiper-slide-active li:not(:last-child) {
-  margin-bottom: 12px;
-}
-
-.coaches:focus-within .coaches__personal-card.swiper-slide-active img,
-.coaches:focus-within .coaches__personal-card.swiper-slide-active picture {
-  height: 100%;
-  width: auto;
-  aspect-ratio: 0.88;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -2;
-}
-
-.coaches:focus-within .coaches__personal-card.swiper-slide-active {
-  padding: 15px;
-  background-color: rgba(16, 38, 84, 0.89);
-}
-
-//new
-
 .coaches__button--prev {
   position: absolute;
   left: 20px;
