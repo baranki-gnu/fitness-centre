@@ -2,10 +2,12 @@
   max-width: 1216px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   z-index: 10;
 }
 
 .header-navigation a {
+  height: min-content;
   color: $color-default-white;
   font-size: 26px;
   line-height: 31.2px;
@@ -13,7 +15,7 @@
   text-decoration: none;
   cursor: pointer;
   display: flex;
-  height: min-content;
+  flex-shrink: 0;
 }
 
 .header-navigation a:hover,

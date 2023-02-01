@@ -153,10 +153,6 @@
   line-height: 22.4px;
 }
 
-.promos__extra-deal br {
-  display: none;
-}
-
 @media (max-width: ($vp-1200 - 1px)) {
   .promos {
     padding-top: 95px;
@@ -237,12 +233,6 @@
 
   .promos__extra-deal {
     margin-bottom: 3px;
-  }
-}
-
-@media (max-width: (900px - 1px)) {
-  .promos__extra-deal br {
-    display: block;
   }
 }
 

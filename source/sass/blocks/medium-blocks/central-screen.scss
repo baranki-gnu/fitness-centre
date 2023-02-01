@@ -175,7 +175,6 @@
     object-fit: cover;
   }
 
-
   .central-screen__buy-link {
     margin-right: 0;
     margin-left: 0;
@@ -231,6 +230,7 @@
 
   .central-screen__buy-link {
     width: calc(100% - 30px);
+    height: min-content;
     margin: 0;
     position: absolute;
     bottom: 80px;

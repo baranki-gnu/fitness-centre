@@ -11,7 +11,7 @@
 }
 
 .pass-types__item {
-  width: 31.03%;
+  width: 31.01%;
   max-width: 360px;
   margin-bottom: 25px;
   display: flex;
@@ -23,12 +23,24 @@
 
 .pass-types__item-inner-wrap {
   width: 100%;
+  height: 100%;
   padding: 65px 15px;
   margin: 0 auto;
   max-height: 100%;
   overflow-y: auto;
   scrollbar-color: $color-spindle $color-light-slate-gray;
   scrollbar-width: thin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pass-types__price-wrap span {
+  margin: 0;
+}
+
+.pass-types__item--active .pass-types__item-lower-part {
+  padding-bottom: 4px;
 }
 
 .pass-types__item-inner-wrap::-webkit-scrollbar {
@@ -56,7 +68,7 @@
 }
 
 .pass-types__item span {
-  margin: 0 auto 46px auto;
+  margin: 0 auto 16px auto;
   display: block;
   font-size: 16px;
   font-weight: 400;
@@ -67,7 +79,7 @@
 
 .pass-types__price-wrap {
   width: max-content;
-  margin: 0 auto 32px auto;
+  margin: 0 auto 35px auto;
   padding-top: 20px;
   position: relative;
 }
@@ -102,8 +114,8 @@
 .pass-types__item a {
   width: 100%;
   max-width: 206px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -120,7 +132,7 @@
 }
 
 .pass-types__item a:hover {
-  padding: 26px;
+  padding: 27px;
   color: $color-default-white;
   background-image: $hover-gradient;
   border-width: 0;
@@ -129,7 +141,7 @@
 .pass-types__item--active a:hover {
   color: $color-default-white;
   background-image: $hover-gradient;
-  padding: 24px;
+  padding: 25px;
 }
 
 .pass-types__item--active .pass-types__item-inner-wrap {
@@ -162,6 +174,7 @@
     width: 65.19%;
     margin: 0 auto;
     flex-direction: column;
+    gap: 41px;
   }
 
   .pass-types__item {
@@ -217,7 +230,7 @@
   .pass-types__item h4 {
     font-size: 22px;
     line-height: 24.23px;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
   }
 
   .pass-types__item-inner-wrap {
@@ -253,6 +266,10 @@
   .pass-types__item--active .pass-types__item-inner-wrap {
     padding-top: 44px;
     padding-bottom: 48px;
+  }
+
+  .pass-types__item--active .pass-types__item-lower-part {
+    padding-bottom: 0;
   }
 
   .pass-types__link-wrap {

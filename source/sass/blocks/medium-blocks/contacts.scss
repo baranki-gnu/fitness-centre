@@ -105,6 +105,10 @@
   color: $color-sapphire;
 }
 
+.contacts__list-item a {
+  display: block;
+}
+
 .contacts__list-item a:hover {
   color: $color-kingfisher-daisy;
 }
