@@ -10,6 +10,10 @@ const coachSlider = new Swiper('.coach-slider', {
   slidesOffsetBefore: -15,
   freeMode: true,
 
+  keyboard: {
+    enabled: true,
+  },
+
   breakpoints: {
     320: {
       slidesPerView: 1,

@@ -60,7 +60,8 @@
 }
 
 .coach-card:hover h3,
-.coach-card--check h3 {
+.coach-card--check h3,
+.coaches__button:focus-visible ~ .coach-slider .coach-card.swiper-slide-active h3 {
   margin: 38px auto 0 auto;
   position: static;
   line-height: 22px;
@@ -70,7 +71,8 @@
 }
 
 .coach-card:hover span,
-.coach-card--check span {
+.coach-card--check span,
+.coaches__button:focus-visible ~ .coach-slider .coach-card.swiper-slide-active span {
   margin: 0 auto 34px auto;
   display: block;
   font-size: 16px;
@@ -81,7 +83,8 @@
 }
 
 .coach-card:hover ul,
-.coach-card--check ul {
+.coach-card--check ul,
+.coaches__button:focus-visible ~ .coach-slider .coach-card.swiper-slide-active ul {
   max-width: 190px;
   margin: 0 auto;
   padding-left: 37px;
@@ -95,14 +98,17 @@
 }
 
 .coach-card:hover li:not(:last-child),
-.coach-card--check li:not(:last-child) {
+.coach-card--check li:not(:last-child),
+.coaches__button:focus-visible ~ .coach-slider .coach-card.swiper-slide-active li:not(:last-child) {
   margin-bottom: 12px;
 }
 
 .coach-card:hover img,
 .coach-card:hover picture,
 .coach-card--check img,
-.coach-card--check picture {
+.coach-card--check picture,
+.coaches__button:focus-visible ~ .coach-slider .coach-card.swiper-slide-active img,
+.coaches__button:focus-visible ~ .coach-slider .coach-card.swiper-slide-active picture {
   height: 100%;
   width: auto;
   aspect-ratio: 0.88;
@@ -113,7 +119,8 @@
 }
 
 .coach-card:hover,
-.coach-card--check {
+.coach-card--check,
+.coaches__button:focus-visible ~ .coach-slider .coach-card.swiper-slide-active {
   padding: 15px;
   background-color: rgba(16, 38, 84, 0.89);
 }
@@ -142,21 +149,24 @@
 
   .coach-card:hover h3,
   .coach-card:active h3,
-  .coach-card--check h3 {
+  .coach-card--check h3,
+  .coaches__button:focus-visible ~ .coach-slider .coach-card.swiper-slide-active h3 {
     padding-left: 0;
     padding-right: 6px;
   }
 
   .coach-card:hover span,
   .coach-card:active span,
-  .coach-card--check span {
+  .coach-card--check span,
+  .coaches__button:focus-visible ~ .coach-slider .coach-card.swiper-slide-active span {
     margin-bottom: 33px;
     padding-right: 5px;
   }
 
   .coach-card:hover ul,
   .coach-card:active ul,
-  .coach-card--check ul {
+  .coach-card--check ul,
+  .coaches__button:focus-visible ~ .coach-slider .coach-card.swiper-slide-active ul {
     padding-left: 33px;
   }
 
@@ -165,7 +175,9 @@
   .coach-card:active img,
   .coach-card:active picture,
   .coach-card--check img,
-  .coach-card--check picture {
+  .coach-card--check picture,
+  .coaches__button:focus-visible ~ .coach-slider .coach-card.swiper-slide-active img,
+  .coaches__button:focus-visible ~ .coach-slider .coach-card.swiper-slide-active picture {
     height: 100%;
     width: auto;
     aspect-ratio: 0.91;
@@ -181,26 +193,31 @@
   .coach-card:active img,
   .coach-card:active picture,
   .coach-card--check img,
-  .coach-card--check picture {
+  .coach-card--check picture,
+  .coaches__button:focus-visible ~ .coach-slider .coach-card.swiper-slide-active img,
+  .coaches__button:focus-visible ~ .coach-slider .coach-card.swiper-slide-active picture {
     min-width: 226px;
     aspect-ratio: 0.83;
   }
 
   .coach-card:hover h3,
   .coach-card:active h3,
-  .coach-card--check h3 {
+  .coach-card--check h3,
+  .coaches__button:focus-visible ~ .coach-slider .coach-card.swiper-slide-active h3 {
     margin-top: 30px;
   }
 
   .coach-card:hover span,
   .coach-card:active span,
-  .coach-card--check span {
+  .coach-card--check span,
+  .coaches__button:focus-visible ~ .coach-slider .coach-card.swiper-slide-active span {
     margin-bottom: 31px;
   }
 
   .coach-card:hover ul,
   .coach-card:active ul,
-  .coach-card--check ul {
+  .coach-card--check ul,
+  .coaches__button:focus-visible ~ .coach-slider .coach-card.swiper-slide-active ul {
     margin-left: 0;
   }
 }

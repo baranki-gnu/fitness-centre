@@ -5,6 +5,7 @@ import {startStoringData} from './utils/form-data-storage';
 import {turnFormValidationOn} from './utils/form-validate';
 import {turnScrollOn} from './utils/scroll-to-block';
 import {removeReviewsNoJs} from './utils/remove-reviews-nojs';
+//import {hasSliderFocus} from './utils/slider-util';
 import './modules/swiper-slider';
 import './modules/video-play';
 // ---------------------------------
@@ -28,6 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
     startStoringData();
     turnFormValidationOn();
     removeReviewsNoJs();
+    //hasSliderFocus();
 
   });
 });
